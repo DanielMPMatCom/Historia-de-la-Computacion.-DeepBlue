@@ -1,0 +1,58 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: report.aux
+Reallocating 'name_of_file' (item size: 1) to 6 items.
+The style file: plain.bst
+Reallocating 'name_of_file' (item size: 1) to 18 items.
+Database file #1: build/referencias.bib
+Warning--to sort, need author or key in wired1997
+Warning--to sort, need author or key in wikideepblue
+Warning--to sort, need author or key in time2013
+Warning--to sort, need author or key in wired2015
+Warning--to sort, need author or key in newyorker2006
+Warning--empty author in wired1997
+Warning--empty author in newyorker2006
+Warning--empty author in time2013
+Warning--empty author in wired2015
+You've used 18 entries,
+            2118 wiz_defined-function locations,
+            593 strings with 5873 characters,
+and the built_in function-call counts, 4396 in all, are:
+= -- 432
+> -- 141
+< -- 2
++ -- 61
+- -- 42
+* -- 254
+:= -- 701
+add.period$ -- 50
+call.type$ -- 18
+change.case$ -- 75
+chr.to.int$ -- 0
+cite$ -- 27
+duplicate$ -- 180
+empty$ -- 411
+format.name$ -- 42
+if$ -- 940
+int.to.chr$ -- 0
+int.to.str$ -- 18
+missing$ -- 11
+newline$ -- 89
+num.names$ -- 26
+pop$ -- 109
+preamble$ -- 1
+purify$ -- 57
+quote$ -- 0
+skip$ -- 142
+stack$ -- 0
+substring$ -- 213
+swap$ -- 31
+text.length$ -- 2
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 72
+warning$ -- 9
+while$ -- 40
+width$ -- 20
+write$ -- 180
+(There were 9 warnings)

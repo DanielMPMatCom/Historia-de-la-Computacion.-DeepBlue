@@ -1,0 +1,91 @@
+\begin{thebibliography}{10}
+
+\bibitem{wired1997}
+May 11, 1997: Machine bests man in tournament-level chess match.
+\newblock {\em Wired}, May 1997.
+
+\bibitem{newyorker2006}
+The electronic holy war.
+\newblock {\em The New Yorker}, May 2006.
+
+\bibitem{time2013}
+Did deep blue beat kasparov because of a system glitch?
+\newblock {\em Time}, April 2013.
+
+\bibitem{wired2015}
+Humans out-play an ai at texas hold 'em—for now.
+\newblock {\em Wired}, May 2015.
+
+\bibitem{wikideepblue}
+Deep blue (chess computer).
+\newblock \url{https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)}, 2025.
+\newblock Accessed: 2025-05-04.
+
+\bibitem{campbell1999search}
+M~Campbell, A~Joseph Hoane, and Feng-hsiung Hsu.
+\newblock Search control methods in deep blue.
+\newblock In {\em AAAI Spring Symposium on Search Techniques for Problem
+  Solving under Uncertainty and Incomplete Information}, pages 19--23, 1999.
+
+\bibitem{Campbell2002}
+Murray Campbell, A.~Joseph~Hoane Jr., and Feng hsiung Hsu.
+\newblock Deep blue.
+\newblock {\em Artificial Intelligence}, 134(1-2):57--83, 2002.
+
+\bibitem{Hsu1988}
+Feng hsiung Hsu, Thomas Anantharaman, and Murray Campbell.
+\newblock Chiptest: A vlsi move generator for chess.
+\newblock {\em Proceedings of the North American Computer Chess Championship},
+  pages 1--9, 1988.
+
+\bibitem{Hsu1989}
+Feng hsiung Hsu and Murray Campbell.
+\newblock Chiptest-m and the evolution to deep thought.
+\newblock {\em IEEE Computer}, 22(5):50--58, 1989.
+
+\bibitem{Hsu1990}
+Feng hsiung Hsu and Murray Campbell.
+\newblock Deep thought: A second-generation chess machine.
+\newblock {\em Artificial Intelligence}, 53(2--3):237--276, 1990.
+
+\bibitem{hsu1999ibm}
+Feng-hsiung Hsu.
+\newblock Ibm's deep blue chess grandmaster chips.
+\newblock {\em IEEE micro}, 19(2):70--81, 1999.
+
+\bibitem{turn0search4}
+{IBM IBM History}.
+\newblock Deep blue – ibm, 2025.
+\newblock Improvements for rematch, databases and evaluation.
+
+\bibitem{turn0search3}
+USC Illumin.
+\newblock Deep blue: The history and engineering behind computer chess, 2008.
+\newblock Selective vs brute-force search debate.
+
+\bibitem{turn0search2}
+Mimuw.
+\newblock Deep blue – mimuw, 2002.
+\newblock Sec. 8.3: Endgame databases.
+
+\bibitem{turn0search10}
+Phamoxtech.
+\newblock Ibm deep blue: The chess machine that beat a world champion, 2023.
+\newblock Hardware VLSI chips and architecture.
+
+\bibitem{turn0search8}
+Chessprogramming Wiki.
+\newblock Deep blue – chessprogramming, 2025.
+\newblock Project origins and architecture.
+
+\bibitem{turn0search9}
+Wikipedia.
+\newblock {Deep Blue (chess computer)}, 2025.
+\newblock Design, hardware and software overview.
+
+\bibitem{turn0news55}
+{Wired}.
+\newblock What deep blue tells us about ai in 2017.
+\newblock {\em Wired}, 2017.
+
+\end{thebibliography}
