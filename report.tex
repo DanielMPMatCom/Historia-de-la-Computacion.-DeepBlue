@@ -24,7 +24,7 @@
 
 % Título del informe
 \title{\textbf{La Automatización del Ajedrez DeepBlue} \\ \subtitle}
-\author{Daniel Machado Pérez \\ Ariel González Gómez}
+\author{Daniel Machado Pérez, C411 \\ Ariel González Gómez, C412}
 
 \newcommand{\subtitle}{\textit{Historia de la Computación}}
 \newcommand{\university}{Universidad de La Habana}
@@ -80,6 +80,15 @@
     destacando su papel en el paso de enfoques de fuerza bruta a 
     sistemas híbridos con conocimiento experto.
 \end{abstract}
+
+\section*{Palabras clave}
+Deep Blue, 
+ajedrez computacional, 
+arquitectura paralela, 
+IBM RS/6000 SP, 
+búsqueda selectiva,
+chip VLSI,
+supercomputación.
     
 
 \newpage
@@ -138,51 +147,89 @@ estructurados.
 % Desarrollo
 
 
-\section{Antecedentes del ajedrez computacional. De ChipTest a Deep Thought}
+\section{Antecedentes del ajedrez computacional}
+
+
+Entre finales de la década de 1940 y principios de la de 1950, 
+surgieron los primeros esfuerzos teóricos y conceptuales para 
+dotar a las máquinas de la capacidad de jugar al ajedrez. En 
+1949, Claude E. Shannon publicó el artículo \emph{“Programming a 
+Computer for Playing Chess”}, en el que planteó por primera vez 
+el uso de la técnica minimax combinada con funciones de 
+evaluación heurísticas y un corte alfa-beta rudimentario para 
+reducir el espacio de búsqueda \cite{shannon1950xxii}. En este 
+trabajo, Shannon (considerado el padre de la teoría de la 
+información) estimó la complejidad del árbol de juego de ajedrez 
+en el orden de \(10^{120}\) posiciones y sugirió métodos 
+sistemáticos para explorar únicamente las ramas más prometedoras, 
+estableciendo así las bases de la mayoría de los programas de 
+ajedrez posteriores.
+
+Pocos años después, en 1950-1952, Alan M. Turing y David G. 
+Champernowne desarrollaron “Turochamp”, el primer programa de 
+ajedrez propiamente dicho, concebido para ejecutarse en el 
+ordenador ACE de la National Physical Laboratory (aunque nunca 
+llegó a implementarse íntegramente en máquina y fue simulado 
+paso a paso por Turing en papel) \cite{turing1953digital}. A pesar de 
+su simplicidad y de que un solo movimiento requería más de media 
+hora de cálculo humano, Turochamp demostró que incluso un 
+algoritmo basado en reglas limitadas era capaz de jugar una 
+partida reconocible, articulando con ello el paradigma de 
+combinar heurísticas de posición, generación de jugadas y 
+cortes selectivos, prefigurando los sistemas que conformarían la 
+era moderna del ajedrez computacional.
+
+\subsection{De ChipTest a Deep Thought}
+
+En la década de los 80 se manifestaban esfuerzos tempranos en 
+el diseño de una máquina capaz de jugar ajedrez a un nivel comparable
+al de los grandes maestros. Fue así como en la Universidad 
+Carnegie Mellon nacían los proyectos ChipTest y Deep Thought,
+precursores de Deep Blue.
+
 
 \subsection{ChipTest}
-El proyecto ChipTest se inició en 1985 en la Universidad 
-Carnegie Mellon bajo la dirección de Feng-hsiung Hsu, Thomas 
+El proyecto ChipTest se inició en 1985 bajo la dirección de 
+Feng-hsiung Hsu, Thomas 
 Anantharaman y Murray Campbell, con el objetivo de explorar la 
 viabilidad de un generador de movimientos de ajedrez 
-implementado en VLSI \cite{Hsu1988}. La primera versión de 
+implementado en VLSI (\emph{Very Large Scale Integration}). La primera versión de 
 ChipTest estaba controlada por una estación de trabajo 
-Sun-3/160 y alcanzaba aproximadamente 50000 posiciones por 
-segundo \cite{Hsu1988}. En 1986, ChipTest compitió en el North 
-American Computer Chess Championship, donde, pese a contar con 
+Sun-3/160\footnote{Sun-3 es una serie de \emph{computer workstations} y servidores de UNIX producida por Sun Microsystems, lanzada el 9 de septiembre de 1985.} 
+y alcanzaba aproximadamente 50000 posiciones por 
+segundo. En 1986, ChipTest compitió en el North 
+American Computer Chess Championship (NACCC), donde, pese a contar con 
 pruebas limitadas antes del torneo, consiguió recuperarse tras 
 un inicio adverso y obtuvo un resultado equilibrado 
-\cite{Hsu1988}.
+\cite{hsu1990deep}.
 
-\subsection{ChipTest-M y transición a Deep Thought}
 En agosto de 1987 se rediseñó ChipTest y se rebautizó como 
 ChipTest-M, multiplicando por diez su velocidad de búsqueda 
 hasta alrededor de 500000 posiciones por segundo, ya sobre una 
-Sun-4 \cite{Hsu1989}. Esta versión se alzó con el título en el 
-NACCC de 1987 con un marcador de 4-0 \cite{Hsu1989}. El éxito de 
+Sun-4\footnote{Aparecida por primera vez en julio de 1987, con el lanzamiento de la Sun 4/260.}. 
+Esta versión se alzó con el título en el 
+NACCC de 1987 con un marcador de 4-0. El éxito de 
 ChipTest-M condujo al desarrollo de Deep Thought: la versión 
 0.01 apareció en mayo de 1988 y la 0.02 en noviembre del mismo 
 año, incorporando dos procesadores VLSI dedicados y elevando la 
-tasa de búsqueda a casi 700000 posiciones por segundo 
-\cite{Hsu1990}. Con Deep Thought, el equipo obtuvo el título en 
+tasa de búsqueda a casi 700000 posiciones por segundo. Con Deep Thought, el equipo obtuvo el título en 
 el World Computer Chess Championship de 1989 con un resultado 
-perfecto de 5-0 \cite{Hsu1990}.
+perfecto de 5-0 \cite{newborn1988results}.
 
 \subsection{Primeros éxitos y limitaciones}
 
 Deep Thought destacó en 1988 al compartir el primer puesto en el 
 Software Toolworks Open de Los Ángeles, donde venció al gran 
 maestro Bent Larsen, consiguiendo una valoración de rendimiento 
-(USCF) de 2551 y ganando el Fredkin Intermediate Prize 
-\cite{Hsu1990}. Asimismo, ganó el ACM Computer Chess 
-Championship en Orlando ese mismo año \cite{Hsu1990}. Pese a 
+de 2551 según la USCF (\emph{US Chess Federation}) y ganando 
+el Fredkin Intermediate Prize \cite{hsu1990grandmaster}. Asimismo, ganó el ACM Computer Chess 
+Championship en Orlando ese mismo año \cite{hsu1990grandmaster}. Pese a 
 estos logros, la arquitectura de ChipTest y Deep Thought 
-permanecía limitada por un grado de paralelismo moderado 
-(dos chips VLSI en configuración típico o procesadores 
-uniprocesador), lo que restringía la profundidad uniforme de 
+permanecía limitada por un grado de paralelismo moderado, 
+lo que restringía la profundidad uniforme de 
 búsqueda y obligaba a depender intensamente de heurísticas de 
 selección y extensiones locales para obtener rendimiento 
-competitivo \cite{Hsu1990}.
+competitivo \cite{hsu1990deep}.
 
 
 
@@ -193,21 +240,19 @@ competitivo \cite{Hsu1990}.
 
 \section{Origen y maduración de Deep Blue}
 
-\subsection{Incorporación a IBM y renombrado}
-
 A finales de 1989, parte del equipo original de ChipTest y Deep 
 Thought (Feng-hsiung Hsu y Murray Campbell) pasó al IBM T.J. 
 Watson Research Center para continuar el desarrollo de máquinas 
 de ajedrez de alto rendimiento. En este nuevo entorno se 
 estableció el proyecto \textit{Deep Thought 2}, considerado el 
 paso intermedio hacia lo que pronto sería conocido como 
-\textit{Deep Blue} \cite{Campbell2002}. Bajo la dirección de la 
+\textit{Deep Blue} \cite{campbell2002deep}. Bajo la dirección de la 
 división de investigación de IBM, el sistema heredó la 
 arquitectura basada en chips VLSI especializada para generar y 
 evaluar movimientos de ajedrez, al tiempo que incorporaba 
 herramientas de software más avanzadas para depuración, 
 afinamiento de la función de evaluación y análisis de partidas 
-\cite{Campbell2002}.
+\cite{campbell2002deep}.
 
 \begin{figure}[h]
     \centering
@@ -227,12 +272,12 @@ dispuso de la versión estable. El sistema corría sobre un
 clúster IBM RS/6000 SP de 36 nodos y empleaba 216 chips VLSI, 
 cada uno capaz de explorar entre 1.6 y 2 millones de posiciones 
 por segundo. En conjunto, la máquina alcanzaba velocidades de 
-entre 50 y 100 millones de posiciones por segundo \cite{Campbell2002}.    
+entre 50 y 100 millones de posiciones por segundo \cite{campbell2002deep}.    
 
 En febrero de 1996, \textit{Deep Blue I} se enfrentó a Garry 
 Kasparov bajo condiciones de torneo: tras empatar 2-2 en las 
 cuatro primeras partidas, Kasparov ganó los dos encuentros 
-finales, venciendo por 4-2 \cite{Campbell2002}. Aunque el 
+finales, venciendo por 4-2 \cite{campbell2002deep}. Aunque el 
 resultado favoreció al campeón humano, la serie demostró que una 
 máquina especialmente diseñada podía competir de tú a tú con la 
 élite mundial.
@@ -247,7 +292,7 @@ repeticiones en hardware y optimizaciones en generación de
 jugadas, elevando la velocidad de cada chip a 2-2.5 millones de 
 posiciones por segundo. Además, el sistema pasó a disponer de 
 480 chips VLSI distribuidos en 30 nodos SP, duplicando con 
-creces la capacidad de búsqueda \cite{Campbell2002}.
+creces la capacidad de búsqueda \cite{campbell2002deep}.
 
 Entre enero y mayo de 1997, el equipo dedicó la mayor parte de 
 sus esfuerzos a afinar la función de evaluación y a preparar la 
@@ -255,7 +300,7 @@ base de datos de aperturas y finales. El resultado fue
 \textit{Deep Blue II}, que derrotó a Kasparov por 3\(\frac{1}{2}\)-2\(\frac{1}{2}\) en mayo
 de 1997, convirtiéndose en la primera máquina en vencer al 
 campeón mundial en un match reglamentario y recibiendo por 
-ello el Premio Fredkin \cite{Campbell2002}.
+ello el Premio Fredkin\footnote{Premio creado por Edward Frenkin para la primera computadora que venciera a un campeón mundial de ajedrez.} \cite{campbell2002deep}.
 
 
 
@@ -277,6 +322,21 @@ ello el Premio Fredkin \cite{Campbell2002}.
 
 \section{Arquitectura del sistema}
 
+La solidez de la capacidad de cómputo de \textit{Deep Blue} 
+descansa en su diseño arquitectónico, que combina un clúster de 
+propósito general de alto rendimiento con cientos de 
+aceleradores VLSI especializados. Esta configuración híbrida 
+permite delegar las primeras fases de la búsqueda en un entorno 
+distribuido de nodos IBM RS/6000 SP, optimizado para la gestión 
+de tablas de transposición y la coordinación de tareas, y 
+delegar las fases más profundas y tácticamente críticas en chips 
+dedicados que ejecutan en silicio algoritmos de evaluación y 
+control de búsqueda con latencia mínima \cite{campbell2002deep}. 
+A continuación se presentan los principales componentes de esta 
+arquitectura, desde la infraestructura de los nodos hasta la 
+jerarquía maestro-trabajador-chip que maximiza el paralelismo y 
+la eficiencia del sistema.
+
 \subsection{Infraestructura IBM RS/6000 SP}
 
 El corazón de \textit{Deep Blue} es un clúster IBM RS/6000 SP 
@@ -287,7 +347,7 @@ de memoria RAM y 4 GB de almacenamiento local. La interconexión
 se realiza mediante un conmutador de alta velocidad que 
 implementa el estándar MPI, garantizando una latencia mínima en 
 el envío y recepción de posiciones de ajedrez durante la 
-búsqueda paralela \cite{Campbell2002, hsu1999ibm}.
+búsqueda paralela \cite{campbell2002deep, hsu1999ibm}.
 
 \subsection{Chips especializados}
 
@@ -300,7 +360,7 @@ función de evaluación en dos niveles —rápida (un ciclo de reloj)
 y lenta (análisis columna por columna de estructuras complejas)—, 
 y un controlador de búsqueda alpha-beta de ventana nula con 
 extensiones locales (jaques, peones pasados, detección de 
-repeticiones en 32 plies) \cite{Campbell2002}. Este diseño en 
+repeticiones en 32 plies) \cite{campbell2002deep}. Este diseño en 
 silicio permite examinar, de forma acumulada, entre 2 y 2.5 
 millones de posiciones por segundo por chip. \cite{hsu1999ibm}
 
@@ -325,7 +385,7 @@ trabajador delega las posiciones finales a un grupo de chips
 VLSI (16 por nodo) para que efectúen la búsqueda más profunda y 
 quiescente en hardware. Esta arquitectura maestro-trabajador-chip 
 maximiza el paralelismo y mantiene siempre ocupados tanto los 
-procesadores como los chips especializados \cite{Campbell2002, hsu1999ibm}.
+procesadores como los chips especializados \cite{campbell2002deep, hsu1999ibm}.
 
 
 
@@ -409,6 +469,20 @@ tácticas escapadas distorsionen la valoración final.
 
 \section{Paralelismo y rendimiento}
 
+La capacidad de \textit{Deep Blue} para explorar eficientemente 
+espacios de estado inmensos no habría sido posible sin un diseño 
+de paralelismo multinivel cuidadosamente articulado. A lo largo 
+de la búsqueda, se combinan técnicas de paralelismo en software 
+(que permiten dividir dinámicamente el árbol de juego entre 
+múltiples procesadores) con un despacho asíncrono de tareas a 
+cientos de chips especializados. Este enfoque mixto optimiza la 
+utilización de recursos y amortigua tanto la variabilidad en los 
+tamaños de las subramas como las latencias de comunicación, 
+resultando en un rendimiento que, aunque superior al de cualquier 
+sistema previo, revela asimismo los desafíos de la escalabilidad 
+en arquitecturas de gran tamaño \cite{campbell2002deep}. 
+
+
 \subsection{Paralelismo en software}
 
 El paralelismo en software de \textit{Deep Blue} se articula en 
@@ -417,16 +491,16 @@ nodos SP antes de delegar en hardware. En primer lugar, se
 emplea \emph{PV-parallelism}, donde tras explorar el primer 
 movimiento de la Variación Principal (PV) todas las alternativas 
 pueden evaluarse en paralelo con ventanas de búsqueda 
-desplazadas para conservar la selectividad \cite{Campbell2002}. 
+desplazadas para conservar la selectividad \cite{campbell2002deep}. 
 En segundo lugar, en nodos que “fallan alto” (fail-high), se 
 pueden lanzar en paralelo búsquedas de profundidad reducida 
 para refinar amenazas y extensiones, mientras que en nodos que 
 “fallan bajo” (fail-low) todas las ramas se procesan 
-concurrentemente hasta encontrar un corte \cite{Campbell2002}. 
+concurrentemente hasta encontrar un corte \cite{campbell2002deep}. 
 Finalmente, la sincronización global se realiza al término de 
 cada iteración de búsqueda, garantizando consistencia de las 
 tablas de transposición y de los datos de análisis antes de 
-pasar a la siguiente profundidad \cite{Campbell2002}.
+pasar a la siguiente profundidad \cite{campbell2002deep}.
 
 \subsection{Offloading a hardware}
 
@@ -435,11 +509,11 @@ Una vez exploradas varias capas en software, \textit{Deep Blue}
 480 chips VLSI. Cada nodo SP puede gestionar múltiples búsquedas 
 de chip en paralelo, enviando trabajos y recibiendo resultados 
 sin bloquearse en espera de la finalización de cada tarea 
-\cite{Campbell2002}. Para mantener un balance de carga 
+\cite{campbell2002deep}. Para mantener un balance de carga 
 adecuado, las búsquedas en hardware que exceden las 8000 
 posiciones expandidas pueden abortarse y reencolarse en 
 software, permitiendo dividirlas en subproblemas más pequeños y 
-redistribuirlos entre otros nodos SP \cite{Campbell2002}.
+redistribuirlos entre otros nodos SP \cite{campbell2002deep}.
 
 \subsection{Medición de eficiencia}
 
@@ -448,11 +522,11 @@ nodo SP (24 chips) mostraron eficiencias del 75\% en posiciones
 relativamente quietas y del 30\% en aquellas con tácticas 
 profundas, reflejando la capacidad de paralelizar ramas 
 homogéneas y de adaptarse a nodos muy desequilibrados 
-\cite{Campbell2002}. Al escalar al sistema completo de 30 nodos, 
+\cite{campbell2002deep}. Al escalar al sistema completo de 30 nodos, 
 se estimó una eficiencia global de aproximadamente 12\% en 
 posiciones tranquilas y 8\% en posiciones tácticas, debido 
 principalmente a la sobrecarga de comunicación y a la 
-variabilidad en el tamaño de las subramas \cite{Campbell2002}.
+variabilidad en el tamaño de las subramas \cite{campbell2002deep}.
 
 
 
@@ -475,37 +549,48 @@ variabilidad en el tamaño de las subramas \cite{Campbell2002}.
 
 \section{Componentes de apoyo}
 
+Los elementos auxiliares que complementan la búsqueda de 
+\textit{Deep Blue} (libro de aperturas, libro extendido, 
+bases de finales y control de tiempo) fueron determinantes para 
+integrar conocimiento posicional experto con la potencia de 
+cálculo. Estos componentes permitieron al sistema navegar con 
+confianza en fases de la partida donde la fuerza bruta pierde 
+eficiencia, garantizando solidez en las aperturas, exactitud en 
+los finales y un uso óptimo del tiempo de cómputo disponible 
+\cite{campbell2002deep}.
+
+
 \subsection{Libro de aperturas}
 
 El libro de aperturas de \textit{Deep Blue} fue ensamblado 
 manualmente por el Gran Maestro Joel Benjamin, junto con los 
 Grandmasters Nick De Firmian, John Fedorowicz y Miguel Illescas, 
 y contenía aproximadamente 4 000 posiciones seleccionadas según 
-la experiencia práctica del sistema \cite{Campbell2002}. Cada 
+la experiencia práctica del sistema \cite{campbell2002deep}. Cada 
 posición del libro fue comprobada mediante ejecuciones nocturnas 
 de \textit{Deep Blue} para asegurar que las líneas propuestas 
 resultaran razonables bajo el motor de búsqueda, priorizando 
 aquellas aperturas en las que el sistema demostraba mayor 
-robustez táctica \cite{Campbell2002}. Antes de cada encuentro, 
+robustez táctica \cite{campbell2002deep}. Antes de cada encuentro, 
 se elegía un repertorio específico en función de la situación 
 del match y de la elección de color, incluyéndose un pequeño 
 “override book” de última hora para correcciones de último 
-minuto \cite{Campbell2002}.
+minuto \cite{campbell2002deep}.
 
 \subsection{Extended Book}
 
 Cuando una posición no estaba cubierta por el libro principal, 
 \textit{Deep Blue} empleaba un “libro extendido” basado en un 
 repositorio de cerca de 700 000 partidas de Grandes Maestros 
-\cite{Campbell2002}. A cada jugada candidateada se le asignaba 
+\cite{campbell2002deep}. A cada jugada candidateada se le asignaba 
 una bonificación escalar calculada a partir de la frecuencia de 
 aparición en la base de datos, la fuerza de los jugadores que la 
 emplearon, los resultados estadísticos y las anotaciones 
 (marcas “!” o “?”), de manera no lineal y ponderada para 
-reflejar consenso teórico de apertura \cite{Campbell2002}. 
+reflejar consenso teórico de apertura \cite{campbell2002deep}. 
 En situaciones extremas, una bonificación superior a medio 
 peón permitía ejecutar la jugada directamente sin activación de 
-la búsqueda completa \cite{Campbell2002}.
+la búsqueda completa \cite{campbell2002deep}.
 
 \subsection{Bases de datos de finales}
 
@@ -513,15 +598,15 @@ Para los finales, \textit{Deep Blue} recurría a bases de datos
 de finales con todas las posiciones de hasta cinco piezas y 
 casos seleccionados de seis piezas (por ejemplo, peones 
 bloqueados), extraídas principalmente de Colecciones de Ken 
-Thompson y contribuciones de Lewis Stiller \cite{Campbell2002}. 
+Thompson y contribuciones de Lewis Stiller \cite{campbell2002deep}. 
 Cada posición se indexaba como un bit (ganar o no perder), de 
 modo que al alcanzarse durante la búsqueda se aplicaba 
 inmediatamente un \emph{cutoff} con valor teórico—alto orden 
 para la victoria o empate, bajo orden para el desempate según 
 evaluación estática—sin necesidad de desarrollar subárboles 
-adicionales \cite{Campbell2002}. Estas bases residían localmente 
+adicionales \cite{campbell2002deep}. Estas bases residían localmente 
 en cada nodo SP y en arreglos RAID compartidos, garantizando 
-acceso rápido en tiempo de búsqueda \cite{Campbell2002}.
+acceso rápido en tiempo de búsqueda \cite{campbell2002deep}.
 
 \subsection{Control de tiempo}
 
@@ -530,13 +615,13 @@ dos objetivos temporales antes de cada movida: un tiempo
 “normal”, calculado como el tiempo restante hasta el próximo 
 control dividido por los movimientos estimados, y un tiempo 
 “pánico” equivalente a un tercio del tiempo restante 
-\cite{Campbell2002}. Si al alcanzar el tiempo normal no se 
+\cite{campbell2002deep}. Si al alcanzar el tiempo normal no se 
 detectaban condiciones excepcionales, el sistema jugaba el mejor 
 movimiento disponible; en caso de variación excesiva en el valor 
 del movimiento (más de 15 centipawns) o estados de 
 \emph{fail-low/high}, la búsqueda continuaba hasta nueva 
 resolución o hasta el tiempo pánico, circunstancia que solo 
-ocurrió una vez en todo el match de 1997 \cite{Campbell2002}.
+ocurrió una vez en todo el match de 1997 \cite{campbell2002deep}.
 
 
 
@@ -554,13 +639,26 @@ ocurrió una vez en todo el match de 1997 \cite{Campbell2002}.
 
 \section{Impacto y legado}
 
+La influencia de \textit{Deep Blue} trasciende el ámbito 
+ajedrecístico para convertirse en un referente de cómo la 
+conjunción de hardware especializado, algoritmos avanzados y 
+conocimiento humano articulado puede redefinir las capacidades 
+de la inteligencia artificial. Su victoria histórica frente a 
+Garry Kasparov en 1997 no solo marcó un hito técnico, sino que 
+desencadenó un debate global sobre los límites de la creatividad 
+mecánica, estimuló nuevas líneas de investigación en 
+supercomputación y estableció las bases para la adopción de 
+arquitecturas híbridas en múltiples dominios científicos y de 
+ingeniería \cite{wired1997,wikideepblue}.
+
+
 \subsection{Hito en IA y supercomputación}
 
 En mayo de 1997, \textit{Deep Blue} se convirtió en el primer 
 sistema informático capaz de derrotar a un campeón mundial de 
 ajedrez bajo condiciones reglamentarias de torneo, venciendo a 
 Garry Kasparov por 3\(\frac{1}{2}\)-2\(\frac{1}{2}\) en 
-Nueva York \cite{wired1997}\cite{wikideepblue}. Este logro 
+Nueva York \cite{wired1997,wikideepblue}. Este logro 
 marcó un antes y un después en la historia de la inteligencia 
 artificial y la supercomputación, pues demostró la viabilidad 
 de arquitecturas masivamente paralelas y hardware especializado 
@@ -569,7 +667,7 @@ magnitud \cite{wired1997}. La gran repercusión mediática y
 científica llevó a la concesión del Premio Fredkin por parte 
 de Carnegie Mellon, dotado con 100 000 USD, además de los 
 incentivos económicos compartidos con Kasparov y los 
-desarrolladores de IBM \cite{wikideepblue}\cite{time2013}.  
+desarrolladores de IBM \cite{wikideepblue,time2013}.  
 
 \subsection{Influencias posteriores}
 
@@ -596,7 +694,7 @@ que Kasparov interpretó como “creatividad” de la máquina. Años
 después se reveló que dicho movimiento fue provocado por un 
 error en el código de selección en un submódulo de evaluación, y 
 no por intervención humana ni por un “insight” genuino del 
-sistema \cite{wikideepblue}\cite{time2013}. Este episodio 
+sistema \cite{wikideepblue,time2013}. Este episodio 
 alimentó el debate sobre la transparencia de los sistemas de 
 IA y la necesidad de auditorías de “caja blanca” en aplicaciones 
 críticas.  
@@ -618,7 +716,7 @@ ajedrez humano y la computadora. En primer lugar, los chips
 VLSI diseñados ad hoc para generación de movimientos y 
 evaluación en un ciclo de reloj demostraron que el procesamiento 
 masivamente paralelo podía explotar la fuerza bruta sin 
-sacrificar precisión táctica \cite{Campbell2002}\cite{turn0search10}. 
+sacrificar precisión táctica \cite{campbell2002deep}\cite{turn0search10}. 
 En segundo lugar, el algoritmo de “dual credit with delayed 
 extensions” introdujo una búsqueda altamente no uniforme que 
 adaptaba dinámicamente la profundidad según la complejidad de 

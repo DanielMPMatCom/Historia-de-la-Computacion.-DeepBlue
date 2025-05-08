@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex build/report"] 1746336639.11996 "build/report.aux" "build/report.bbl" "build/report" 1746336646.59972 0
-  "./build/referencias.bib" 1746336471 4061 1a228b7f022681e0ccc292a2894716ba ""
+["bibtex build/report"] 1746685326.60252 "build/report.aux" "build/report.bbl" "build/report" 1746685337.91789 0
+  "./build/referencias.bib" 1746683867 4554 6d6b2d6462007222848dec58293eeb0e ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/report.aux" 1746336645 7487 74751f8bcbbbce480bbb34ce30a35e91 "pdflatex"
+  "build/report.aux" 1746685335 7624 6b93fddfa65775e0390f11562b53a3d8 "pdflatex"
   (generated)
   "build/report.bbl"
   "build/report.blg"
   (rewritten before read)
-["pdflatex"] 1746336639.695 "d:/Escuela/CComputación/Cuarto Año/HC/Historia-de-la-Computacion.-DeepBlue/report.tex" "build/report.pdf" "report" 1746336646.60074 0
-  "C:/Users/DanielHP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746330607 82507 a9eef8696c92627b87e9975edea03b2a ""
+["pdflatex"] 1746685327.5469 "d:/Escuela/CComputación/Cuarto Año/HC/Historia-de-la-Computacion.-DeepBlue/report.tex" "build/report.pdf" "report" 1746685337.91948 0
+  "C:/Users/DanielHP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746502110 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/DanielHP/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1743781400 12037581 218a50ed939c5118c97c5205fb74cb13 ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx12.tfm" 1136765053 1324 c910af8c371558dc20f2d7822f66fe64 ""
@@ -30,6 +30,7 @@
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb" 1247596666 32080 340ef9bf63678554ee606688e7b5339d ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1247596667 35752 024fb6c41858982481f6968b5fc26508 ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb" 1247596667 32722 d7379af29a190c3f453aba36302ff5a9 ""
+  "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1247596667 32762 7fee39e011c23b3589931effd97b9702 ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb" 1247596667 32726 39f0f9e62e84beb801509898a605dbd5 ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb" 1247596667 37944 359e864bd06cde3b1cf57bb20757fb06 ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb" 1247596667 36118 fad905eba93cff5bce1e185fe980a177 ""
@@ -93,12 +94,12 @@
   "assets/deep-blue-chip.jpg" 1746335010 65432 0a4bb1006554410d6f2c0cb990cf7f7e ""
   "assets/deepblue.jpg" 1746334946 31939 6ac78a3559cecbacd1ba7ed8161a0869 ""
   "assets/logo.jpg" 1746328302 13390 b4e3af7fa76721d1ee69e47bbd001580 ""
-  "build/report.aux" 1746336645 7487 74751f8bcbbbce480bbb34ce30a35e91 "pdflatex"
-  "build/report.bbl" 1746336639 2845 d6624b2b2785b1a4aba752309fbedb27 "bibtex build/report"
-  "build/report.out" 1746336645 5882 6931b76a4f20401cf2a47047bf9527dd "pdflatex"
-  "build/report.toc" 1746336645 2801 3a848a79a45f1ad25998442d6abe56c9 "pdflatex"
-  "d:/Escuela/CComputación/Cuarto Año/HC/Historia-de-la-Computacion.-DeepBlue/report.tex" 1746336628 27822 0fc948d8523d62fdbfaee4a59f4c4121 ""
-  "report.tex" 1746336628 27822 0fc948d8523d62fdbfaee4a59f4c4121 ""
+  "build/report.aux" 1746685335 7624 6b93fddfa65775e0390f11562b53a3d8 "pdflatex"
+  "build/report.bbl" 1746685327 3244 e4ad272f9f4cf85e9b7952337e8921dc "bibtex build/report"
+  "build/report.out" 1746685335 5428 be030f9da6d674e23cf08b05ff7b080a "pdflatex"
+  "build/report.toc" 1746685335 2664 c65b96c56d56e925ff465b3eb2ffb28e "pdflatex"
+  "d:/Escuela/CComputación/Cuarto Año/HC/Historia-de-la-Computacion.-DeepBlue/report.tex" 1746685316 33206 bcf555bf267d0bfb89c87b3585aef6c6 ""
+  "report.tex" 1746685316 33206 bcf555bf267d0bfb89c87b3585aef6c6 ""
   (generated)
   "build/report.aux"
   "build/report.log"

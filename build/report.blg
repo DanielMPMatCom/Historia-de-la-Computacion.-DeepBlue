@@ -14,45 +14,45 @@ Warning--empty author in wired1997
 Warning--empty author in newyorker2006
 Warning--empty author in time2013
 Warning--empty author in wired2015
-You've used 18 entries,
+You've used 20 entries,
             2118 wiz_defined-function locations,
-            593 strings with 5873 characters,
-and the built_in function-call counts, 4396 in all, are:
-= -- 432
-> -- 141
+            606 strings with 6232 characters,
+and the built_in function-call counts, 5071 in all, are:
+= -- 500
+> -- 170
 < -- 2
-+ -- 61
-- -- 42
-* -- 254
-:= -- 701
-add.period$ -- 50
-call.type$ -- 18
-change.case$ -- 75
++ -- 74
+- -- 52
+* -- 301
+:= -- 813
+add.period$ -- 57
+call.type$ -- 20
+change.case$ -- 86
 chr.to.int$ -- 0
-cite$ -- 27
-duplicate$ -- 180
-empty$ -- 411
-format.name$ -- 42
-if$ -- 940
+cite$ -- 29
+duplicate$ -- 206
+empty$ -- 467
+format.name$ -- 52
+if$ -- 1081
 int.to.chr$ -- 0
-int.to.str$ -- 18
-missing$ -- 11
-newline$ -- 89
-num.names$ -- 26
-pop$ -- 109
+int.to.str$ -- 20
+missing$ -- 13
+newline$ -- 99
+num.names$ -- 30
+pop$ -- 121
 preamble$ -- 1
-purify$ -- 57
+purify$ -- 66
 quote$ -- 0
-skip$ -- 142
+skip$ -- 157
 stack$ -- 0
-substring$ -- 213
-swap$ -- 31
+substring$ -- 257
+swap$ -- 36
 text.length$ -- 2
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 72
+type$ -- 80
 warning$ -- 9
-while$ -- 40
-width$ -- 20
-write$ -- 180
+while$ -- 46
+width$ -- 22
+write$ -- 202
 (There were 9 warnings)

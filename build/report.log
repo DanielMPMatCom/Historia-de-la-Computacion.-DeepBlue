@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  4 MAY 2025 01:30
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  8 MAY 2025 02:22
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -320,12 +320,12 @@ Package hyperref Info: Link coloring OFF on input line 34.
 \@outlinefile=\write3
 \openout3 = `report.out'.
 
-<assets/UH.jpg, id=127, 577.15625pt x 794.97pt>
+<assets/UH.jpg, id=123, 577.15625pt x 794.97pt>
 File: assets/UH.jpg Graphic file (type jpg)
 <use assets/UH.jpg>
 Package pdftex.def Info: assets/UH.jpg  used on input line 38.
 (pdftex.def)             Requested size: 64.01608pt x 88.17477pt.
-<assets/MatCom sin fondo color.png, id=128, 963.6pt x 963.6pt>
+<assets/MatCom sin fondo color.png, id=124, 963.6pt x 963.6pt>
 File: assets/MatCom sin fondo color.png Graphic file (type png)
 <use assets/MatCom sin fondo color.png>
 Package pdftex.def Info: assets/MatCom sin fondo color.png  used on input line 40.
@@ -334,7 +334,7 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <14.4> on input line 46.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <7> on input line 46.
-<assets/logo.jpg, id=130, 108.405pt x 108.405pt>
+<assets/logo.jpg, id=126, 108.405pt x 108.405pt>
 File: assets/logo.jpg Graphic file (type jpg)
 <use assets/logo.jpg>
 Package pdftex.def Info: assets/logo.jpg  used on input line 50.
@@ -349,11 +349,6 @@ pdfTeX warning: pdflatex (file ./assets/MatCom sin fondo color.png): large inter
 > <./assets/logo.jpg>] (d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.toc
 LaTeX Info: Redefining \. on input line 1.
 LaTeX Info: Redefining \% on input line 1.
-
-Overfull \hbox (20.22092pt too wide) in paragraph at lines 3--3
- [] [][]\OT1/cmr/bx/n/12 Antecedentes del aje-drez compu-tacio-nal. De Chip-Test a Deep Thought[] []  
- []
-
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <12> on input line 4.
 LaTeX Font Info:    External font `cmex10' loaded for size
@@ -392,10 +387,8 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [4]
-Overfull \hbox (22.8064pt too wide) in paragraph at lines 141--141
-|[]\OT1/cmr/bx/n/17.28 Antecedentes del aje-drez compu-tacio-nal. De Chip-
- []
-
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 198.
 
 
 
@@ -406,10 +399,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-<assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg, id=206, 376.40625pt x 251.43938pt>
+<assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg, id=204, 376.40625pt x 251.43938pt>
 File: assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg Graphic file (type jpg)
 <use assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg>
-Package pdftex.def Info: assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg  used on input line 214.
+Package pdftex.def Info: assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg  used on input line 259.
 (pdftex.def)             Requested size: 256.07741pt x 171.07242pt.
 
 
@@ -421,11 +414,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [6 <./assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg>]
-<assets/deepblue.jpg, id=217, 331.2375pt x 497.86pt>
+<assets/deepblue.jpg, id=218, 331.2375pt x 497.86pt>
 File: assets/deepblue.jpg Graphic file (type jpg)
 <use assets/deepblue.jpg>
-Package pdftex.def Info: assets/deepblue.jpg  used on input line 264.
+Package pdftex.def Info: assets/deepblue.jpg  used on input line 309.
 (pdftex.def)             Requested size: 256.07741pt x 384.9107pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 
@@ -435,11 +432,20 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7 <./assets/deepblue.jpg>]
-<assets/deep-blue-chip.jpg, id=229, 602.25pt x 570.13pt>
+[7]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[8 <./assets/deepblue.jpg>]
+<assets/deep-blue-chip.jpg, id=236, 602.25pt x 570.13pt>
 File: assets/deep-blue-chip.jpg Graphic file (type jpg)
 <use assets/deep-blue-chip.jpg>
-Package pdftex.def Info: assets/deep-blue-chip.jpg  used on input line 309.
+Package pdftex.def Info: assets/deep-blue-chip.jpg  used on input line 369.
 (pdftex.def)             Requested size: 256.07741pt x 242.42819pt.
 
 
@@ -450,16 +456,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[8 <./assets/deep-blue-chip.jpg>]
-
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[9]
+[9 <./assets/deep-blue-chip.jpg>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -495,7 +492,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[13] (d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl)
+[13]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -504,7 +501,25 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[14] (d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.aux
+[14] (d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[15])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16] (d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -513,20 +528,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 6931B76A4F20401CF2A47047BF9527DD;5882.
+(rerunfilecheck)             Checksum: BE030F9DA6D674E23CF08B05FF7B080A;5428.
  ) 
 Here is how much of TeX's memory you used:
- 11604 strings out of 473522
- 186548 string characters out of 5713158
- 609906 words of memory out of 5000000
- 34646 multiletter control sequences out of 15000+600000
- 566129 words of font info for 60 fonts, out of 8000000 for 9000
+ 11619 strings out of 473522
+ 186930 string characters out of 5713158
+ 609950 words of memory out of 5000000
+ 34655 multiletter control sequences out of 15000+600000
+ 566475 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,13n,79p,517b,458s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.pdf" (14 pages, 564849 bytes).
+ 75i,12n,79p,362b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.pdf" (16 pages, 588532 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 67 named destinations out of 1000 (max. 500000)
- 279 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 390 PDF objects out of 1000 (max. 8388607)
+ 73 named destinations out of 1000 (max. 500000)
+ 271 words of extra memory for PDF output out of 10000 (max. 10000000)
 

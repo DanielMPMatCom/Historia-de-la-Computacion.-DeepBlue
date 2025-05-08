@@ -27,31 +27,26 @@ M~Campbell, A~Joseph Hoane, and Feng-hsiung Hsu.
 \newblock In {\em AAAI Spring Symposium on Search Techniques for Problem
   Solving under Uncertainty and Incomplete Information}, pages 19--23, 1999.
 
-\bibitem{Campbell2002}
-Murray Campbell, A.~Joseph~Hoane Jr., and Feng hsiung Hsu.
+\bibitem{campbell2002deep}
+Murray Campbell, A~Joseph Hoane~Jr, and Feng-hsiung Hsu.
 \newblock Deep blue.
-\newblock {\em Artificial Intelligence}, 134(1-2):57--83, 2002.
+\newblock {\em Artificial intelligence}, 134(1-2):57--83, 2002.
 
-\bibitem{Hsu1988}
-Feng hsiung Hsu, Thomas Anantharaman, and Murray Campbell.
-\newblock Chiptest: A vlsi move generator for chess.
-\newblock {\em Proceedings of the North American Computer Chess Championship},
-  pages 1--9, 1988.
-
-\bibitem{Hsu1989}
-Feng hsiung Hsu and Murray Campbell.
-\newblock Chiptest-m and the evolution to deep thought.
-\newblock {\em IEEE Computer}, 22(5):50--58, 1989.
-
-\bibitem{Hsu1990}
-Feng hsiung Hsu and Murray Campbell.
-\newblock Deep thought: A second-generation chess machine.
-\newblock {\em Artificial Intelligence}, 53(2--3):237--276, 1990.
+\bibitem{hsu1990deep}
+F-h Hsu, Thomas~S Anantharaman, Murray~S Campbell, and Andreas Nowatzyk.
+\newblock Deep thought.
+\newblock In {\em Computers, Chess, and Cognition}, pages 55--78. Springer,
+  1990.
 
 \bibitem{hsu1999ibm}
 Feng-hsiung Hsu.
 \newblock Ibm's deep blue chess grandmaster chips.
 \newblock {\em IEEE micro}, 19(2):70--81, 1999.
+
+\bibitem{hsu1990grandmaster}
+Feng-hsiung Hsu, Thomas Anantharaman, Murray Campbell, and Andreas Nowatzyk.
+\newblock A grandmaster chess machine.
+\newblock {\em Scientific American}, 263(4):44--51, 1990.
 
 \bibitem{turn0search4}
 {IBM IBM History}.
@@ -68,10 +63,26 @@ Mimuw.
 \newblock Deep blue – mimuw, 2002.
 \newblock Sec. 8.3: Endgame databases.
 
+\bibitem{newborn1988results}
+Monty Newborn and Danny Kopec.
+\newblock Results of acm's eighteenth computer chess championship.
+\newblock {\em Communications of the ACM}, 31(8):992--995, 1988.
+
 \bibitem{turn0search10}
 Phamoxtech.
 \newblock Ibm deep blue: The chess machine that beat a world champion, 2023.
 \newblock Hardware VLSI chips and architecture.
+
+\bibitem{shannon1950xxii}
+Claude~E Shannon.
+\newblock Xxii. programming a computer for playing chess.
+\newblock {\em The London, Edinburgh, and Dublin Philosophical Magazine and
+  Journal of Science}, 41(314):256--275, 1950.
+
+\bibitem{turing1953digital}
+Alan~M Turing.
+\newblock Digital computers applied to games.
+\newblock {\em Faster than thought}, 1953.
 
 \bibitem{turn0search8}
 Chessprogramming Wiki.
