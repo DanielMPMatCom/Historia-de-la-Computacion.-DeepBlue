@@ -171,11 +171,11 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 OUTPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.toc
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
@@ -199,6 +199,14 @@ INPUT .\assets\deep-blue-chip.jpg
 INPUT .\assets\deep-blue-chip.jpg
 INPUT .\assets\deep-blue-chip.jpg
 INPUT .\assets\deep-blue-chip.jpg
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT .\assets\deepbluevskasparov.jpg
+INPUT .\assets\deepbluevskasparov.jpg
+INPUT .\assets\deepbluevskasparov.jpg
+INPUT .\assets\deepbluevskasparov.jpg
+INPUT .\assets\deepbluevskasparov.jpg
+INPUT .\assets\deepbluevskasparov.jpg
+INPUT .\assets\deepbluevskasparov.jpg
 INPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl
 INPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl
 INPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl
@@ -210,6 +218,10 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfont
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx10.pfb
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbx12.pfb
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmbxti10.pfb
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmmi10.pfb
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr10.pfb
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\type1\public\amsfonts\cm\cmr12.pfb

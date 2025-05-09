@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  8 MAY 2025 02:22
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.4)  9 MAY 2025 02:12
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -238,6 +238,10 @@ LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 Package babel Info: 'spanish' activates 'spanish' shorthands.
 (babel)             Reported  on input line 12.
+
+
+LaTeX Warning: Label `fig:deepblue' multiply defined.
+
 )
 \openout1 = `report.aux'.
 
@@ -399,11 +403,15 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [5]
-<assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg, id=204, 376.40625pt x 251.43938pt>
+<assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg, id=206, 376.40625pt x 251.43938pt>
 File: assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg Graphic file (type jpg)
 <use assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg>
-Package pdftex.def Info: assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg  used on input line 259.
+Package pdftex.def Info: assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg  used on input line 266.
 (pdftex.def)             Requested size: 256.07741pt x 171.07242pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
 
 
 
@@ -413,11 +421,11 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[6 <./assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg>]
-<assets/deepblue.jpg, id=218, 331.2375pt x 497.86pt>
+[6]
+<assets/deepblue.jpg, id=223, 331.2375pt x 497.86pt>
 File: assets/deepblue.jpg Graphic file (type jpg)
 <use assets/deepblue.jpg>
-Package pdftex.def Info: assets/deepblue.jpg  used on input line 309.
+Package pdftex.def Info: assets/deepblue.jpg  used on input line 317.
 (pdftex.def)             Requested size: 256.07741pt x 384.9107pt.
 
 
@@ -432,7 +440,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[7]
+[7 <./assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -442,10 +450,10 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [8 <./assets/deepblue.jpg>]
-<assets/deep-blue-chip.jpg, id=236, 602.25pt x 570.13pt>
+<assets/deep-blue-chip.jpg, id=245, 602.25pt x 570.13pt>
 File: assets/deep-blue-chip.jpg Graphic file (type jpg)
 <use assets/deep-blue-chip.jpg>
-Package pdftex.def Info: assets/deep-blue-chip.jpg  used on input line 369.
+Package pdftex.def Info: assets/deep-blue-chip.jpg  used on input line 383.
 (pdftex.def)             Requested size: 256.07741pt x 242.42819pt.
 
 
@@ -493,15 +501,12 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
 [13]
+<assets/deepbluevskasparov.jpg, id=324, 677.53125pt x 453.94594pt>
+File: assets/deepbluevskasparov.jpg Graphic file (type jpg)
+<use assets/deepbluevskasparov.jpg>
+Package pdftex.def Info: assets/deepbluevskasparov.jpg  used on input line 718.
+(pdftex.def)             Requested size: 256.07741pt x 171.57307pt.
 
-
-Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 14.49998pt, for example:
-(fancyhdr)                \setlength{\headheight}{14.49998pt}.
-(fancyhdr)                You might also make \topmargin smaller:
-(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
-
-[14] (d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -510,7 +515,7 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[15])
+[14 <./assets/deepbluevskasparov.jpg>]
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
@@ -519,7 +524,39 @@ Package fancyhdr Warning: \headheight is too small (12.0pt):
 (fancyhdr)                You might also make \topmargin smaller:
 (fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
 
-[16] (d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.aux
+[15]
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[16] (d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl
+Underfull \hbox (badness 10000) in paragraph at lines 4--10
+\OT1/cmtt/m/n/12 deep-[]blue-[]the-[]history-[]and-[]engineering-[]behind-[]computer-[]chess/$[]\OT1/cmr/m/n/12 ,
+ []
+
+
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[17])
+
+
+Package fancyhdr Warning: \headheight is too small (12.0pt): 
+(fancyhdr)                Make it at least 14.49998pt, for example:
+(fancyhdr)                \setlength{\headheight}{14.49998pt}.
+(fancyhdr)                You might also make \topmargin smaller:
+(fancyhdr)                \addtolength{\topmargin}{-2.49998pt}.
+
+[18] (d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.aux
 LaTeX Info: Redefining \. on input line 12.
 LaTeX Info: Redefining \% on input line 12.
 )
@@ -527,21 +564,25 @@ LaTeX Info: Redefining \% on input line 12.
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
+
+
+LaTeX Warning: There were multiply-defined labels.
+
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: BE030F9DA6D674E23CF08B05FF7B080A;5428.
+(rerunfilecheck)             Checksum: 21E5CB06B08B1305CE62046052AAB7DF;5330.
  ) 
 Here is how much of TeX's memory you used:
- 11619 strings out of 473522
- 186930 string characters out of 5713158
- 609950 words of memory out of 5000000
- 34655 multiletter control sequences out of 15000+600000
- 566475 words of font info for 61 fonts, out of 8000000 for 9000
+ 11637 strings out of 473522
+ 187328 string characters out of 5713158
+ 612053 words of memory out of 5000000
+ 34654 multiletter control sequences out of 15000+600000
+ 566834 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,79p,362b,648s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on "d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.pdf" (16 pages, 588532 bytes).
+ 75i,12n,79p,362b,637s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmbxti10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmti12.pfb><C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
+Output written on "d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.pdf" (18 pages, 761072 bytes).
 PDF statistics:
- 390 PDF objects out of 1000 (max. 8388607)
- 73 named destinations out of 1000 (max. 500000)
- 271 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 437 PDF objects out of 1000 (max. 8388607)
+ 91 named destinations out of 1000 (max. 500000)
+ 276 words of extra memory for PDF output out of 10000 (max. 10000000)
 

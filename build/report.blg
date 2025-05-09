@@ -5,54 +5,44 @@ Reallocating 'name_of_file' (item size: 1) to 6 items.
 The style file: plain.bst
 Reallocating 'name_of_file' (item size: 1) to 18 items.
 Database file #1: build/referencias.bib
-Warning--to sort, need author or key in wired1997
-Warning--to sort, need author or key in wikideepblue
-Warning--to sort, need author or key in time2013
-Warning--to sort, need author or key in wired2015
-Warning--to sort, need author or key in newyorker2006
-Warning--empty author in wired1997
-Warning--empty author in newyorker2006
-Warning--empty author in time2013
-Warning--empty author in wired2015
-You've used 20 entries,
+You've used 17 entries,
             2118 wiz_defined-function locations,
-            606 strings with 6232 characters,
-and the built_in function-call counts, 5071 in all, are:
-= -- 500
-> -- 170
-< -- 2
+            607 strings with 6340 characters,
+and the built_in function-call counts, 5022 in all, are:
+= -- 514
+> -- 179
+< -- 3
 + -- 74
-- -- 52
-* -- 301
-:= -- 813
-add.period$ -- 57
-call.type$ -- 20
-change.case$ -- 86
+- -- 56
+* -- 313
+:= -- 847
+add.period$ -- 58
+call.type$ -- 17
+change.case$ -- 79
 chr.to.int$ -- 0
-cite$ -- 29
-duplicate$ -- 206
-empty$ -- 467
-format.name$ -- 52
-if$ -- 1081
+cite$ -- 17
+duplicate$ -- 202
+empty$ -- 424
+format.name$ -- 56
+if$ -- 1052
 int.to.chr$ -- 0
-int.to.str$ -- 20
-missing$ -- 13
-newline$ -- 99
-num.names$ -- 30
-pop$ -- 121
+int.to.str$ -- 17
+missing$ -- 15
+newline$ -- 94
+num.names$ -- 34
+pop$ -- 78
 preamble$ -- 1
-purify$ -- 66
+purify$ -- 62
 quote$ -- 0
-skip$ -- 157
+skip$ -- 142
 stack$ -- 0
-substring$ -- 257
-swap$ -- 36
-text.length$ -- 2
+substring$ -- 307
+swap$ -- 39
+text.length$ -- 3
 text.prefix$ -- 0
 top$ -- 0
-type$ -- 80
-warning$ -- 9
-while$ -- 46
-width$ -- 22
-write$ -- 202
-(There were 9 warnings)
+type$ -- 68
+warning$ -- 0
+while$ -- 57
+width$ -- 19
+write$ -- 195

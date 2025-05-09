@@ -5,27 +5,27 @@
 \contentsline {subsection}{\numberline {2.2}ChipTest}{5}{subsection.2.2}%
 \contentsline {subsection}{\numberline {2.3}Primeros éxitos y limitaciones}{6}{subsection.2.3}%
 \contentsline {section}{\numberline {3}Origen y maduración de Deep Blue}{6}{section.3}%
-\contentsline {subsection}{\numberline {3.1}Deep Blue I (1995-1996)}{7}{subsection.3.1}%
+\contentsline {subsection}{\numberline {3.1}Deep Blue I (1995-1996)}{6}{subsection.3.1}%
 \contentsline {subsection}{\numberline {3.2}Deep Blue II (1996-1997)}{7}{subsection.3.2}%
 \contentsline {section}{\numberline {4}Arquitectura del sistema}{7}{section.4}%
 \contentsline {subsection}{\numberline {4.1}Infraestructura IBM RS/6000 SP}{8}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}Chips especializados}{8}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.2}Chips especializados}{9}{subsection.4.2}%
 \contentsline {subsection}{\numberline {4.3}Jerarquía Maestro--Trabajador--Chip}{9}{subsection.4.3}%
-\contentsline {section}{\numberline {5}Algoritmos de búsqueda y evaluación}{9}{section.5}%
+\contentsline {section}{\numberline {5}Algoritmos de búsqueda y evaluación}{10}{section.5}%
 \contentsline {subsection}{\numberline {5.1}Búsqueda selectiva híbrida}{10}{subsection.5.1}%
-\contentsline {subsection}{\numberline {5.2}Evaluación en hardware}{10}{subsection.5.2}%
-\contentsline {subsection}{\numberline {5.3}Extensiones y búsqueda cuiescente}{10}{subsection.5.3}%
-\contentsline {section}{\numberline {6}Paralelismo y rendimiento}{10}{section.6}%
-\contentsline {subsection}{\numberline {6.1}Paralelismo en software}{11}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Offloading a hardware}{11}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Medición de eficiencia}{11}{subsection.6.3}%
-\contentsline {section}{\numberline {7}Componentes de apoyo}{11}{section.7}%
+\contentsline {subsection}{\numberline {5.2}Evaluación en \emph {hardware}}{10}{subsection.5.2}%
+\contentsline {subsection}{\numberline {5.3}Extensiones y búsqueda quiescente}{11}{subsection.5.3}%
+\contentsline {section}{\numberline {6}Paralelismo y rendimiento}{11}{section.6}%
+\contentsline {subsection}{\numberline {6.1}Paralelismo en \emph {software}}{11}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}\emph {Offloading} a \emph {hardware}}{12}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Medición de eficiencia}{12}{subsection.6.3}%
+\contentsline {section}{\numberline {7}Componentes de apoyo}{12}{section.7}%
 \contentsline {subsection}{\numberline {7.1}Libro de aperturas}{12}{subsection.7.1}%
-\contentsline {subsection}{\numberline {7.2}Extended Book}{12}{subsection.7.2}%
-\contentsline {subsection}{\numberline {7.3}Bases de datos de finales}{12}{subsection.7.3}%
-\contentsline {subsection}{\numberline {7.4}Control de tiempo}{12}{subsection.7.4}%
-\contentsline {section}{\numberline {8}Impacto y legado}{13}{section.8}%
-\contentsline {subsection}{\numberline {8.1}Hito en IA y supercomputación}{13}{subsection.8.1}%
-\contentsline {subsection}{\numberline {8.2}Influencias posteriores}{13}{subsection.8.2}%
-\contentsline {subsection}{\numberline {8.3}Curiosidades y datos interesantes}{13}{subsection.8.3}%
-\contentsline {section}{\numberline {9}Conclusiones}{14}{section.9}%
+\contentsline {subsection}{\numberline {7.2}\emph {Extended Book}}{13}{subsection.7.2}%
+\contentsline {subsection}{\numberline {7.3}Bases de datos de finales}{13}{subsection.7.3}%
+\contentsline {subsection}{\numberline {7.4}Control de tiempo}{13}{subsection.7.4}%
+\contentsline {section}{\numberline {8}Impacto y legado}{14}{section.8}%
+\contentsline {subsection}{\numberline {8.1}Influencias posteriores}{14}{subsection.8.1}%
+\contentsline {subsection}{\numberline {8.2}Repercusiones histórico-culturales}{15}{subsection.8.2}%
+\contentsline {subsection}{\numberline {8.3}Curiosidades}{15}{subsection.8.3}%
+\contentsline {section}{\numberline {9}Conclusiones}{16}{section.9}%

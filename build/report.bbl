@@ -1,25 +1,18 @@
 \begin{thebibliography}{10}
 
-\bibitem{wired1997}
-May 11, 1997: Machine bests man in tournament-level chess match.
-\newblock {\em Wired}, May 1997.
+\bibitem{aung2010}
+Lawrence Aung.
+\newblock Deep blue: The history and engineering behind computer chess.
+\newblock USC Viterbi School of Engineering,
+  \url{https://illumin.usc.edu/deep-blue-the-history-and-engineering-behind-computer-chess/},
+  March 2010.
+\newblock Updated November 12, 2017; Accessed: 2025-05-09.
 
-\bibitem{newyorker2006}
-The electronic holy war.
-\newblock {\em The New Yorker}, May 2006.
-
-\bibitem{time2013}
-Did deep blue beat kasparov because of a system glitch?
-\newblock {\em Time}, April 2013.
-
-\bibitem{wired2015}
-Humans out-play an ai at texas hold 'em—for now.
-\newblock {\em Wired}, May 2015.
-
-\bibitem{wikideepblue}
-Deep blue (chess computer).
-\newblock \url{https://en.wikipedia.org/wiki/Deep_Blue_(chess_computer)}, 2025.
-\newblock Accessed: 2025-05-04.
+\bibitem{bory2019deep}
+Paolo Bory.
+\newblock Deep new: The shifting narratives of artificial intelligence from
+  deep blue to alphago.
+\newblock {\em Convergence}, 25(4):627--642, 2019.
 
 \bibitem{campbell1999search}
 M~Campbell, A~Joseph Hoane, and Feng-hsiung Hsu.
@@ -31,6 +24,18 @@ M~Campbell, A~Joseph Hoane, and Feng-hsiung Hsu.
 Murray Campbell, A~Joseph Hoane~Jr, and Feng-hsiung Hsu.
 \newblock Deep blue.
 \newblock {\em Artificial intelligence}, 134(1-2):57--83, 2002.
+
+\bibitem{forbes2019explainable}
+{Forbes Technology Council}.
+\newblock What deep blue and alphago can teach us about explainable ai.
+\newblock {\em Forbes}, May 2019.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{greenemeier2017}
+Larry Greenemeier.
+\newblock 20 years after deep blue: How ai has advanced since conquering chess.
+\newblock {\em Scientific American}, June 2017.
+\newblock Accessed: 2025-05-09.
 
 \bibitem{hsu1990deep}
 F-h Hsu, Thomas~S Anantharaman, Murray~S Campbell, and Andreas Nowatzyk.
@@ -48,30 +53,34 @@ Feng-hsiung Hsu, Thomas Anantharaman, Murray Campbell, and Andreas Nowatzyk.
 \newblock A grandmaster chess machine.
 \newblock {\em Scientific American}, 263(4):44--51, 1990.
 
-\bibitem{turn0search4}
-{IBM IBM History}.
-\newblock Deep blue – ibm, 2025.
-\newblock Improvements for rematch, databases and evaluation.
+\bibitem{ibmHistoryDeepBlue}
+{IBM}.
+\newblock Deep blue.
+\newblock \url{https://www.ibm.com/history/deep-blue}, 2025.
+\newblock Accessed: 2025-05-09.
 
-\bibitem{turn0search3}
-USC Illumin.
-\newblock Deep blue: The history and engineering behind computer chess, 2008.
-\newblock Selective vs brute-force search debate.
+\bibitem{korf1997does}
+Richard~E Korf.
+\newblock Does deep blue use ai?
+\newblock In {\em Deep Blue Versus Kasparov: The Significance for Artificial
+  Intelligence}, pages 1--2, 1997.
 
-\bibitem{turn0search2}
-Mimuw.
-\newblock Deep blue – mimuw, 2002.
-\newblock Sec. 8.3: Endgame databases.
+\bibitem{latson2015}
+Jennifer Latson.
+\newblock Did deep blue beat kasparov because of a system glitch?
+\newblock {\em TIME}, February 2015.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{wired2017ai}
+Steven Levy.
+\newblock What deep blue tells us about ai in 2017.
+\newblock {\em WIRED}, May 2017.
+\newblock Accessed: 2025-05-09.
 
 \bibitem{newborn1988results}
 Monty Newborn and Danny Kopec.
 \newblock Results of acm's eighteenth computer chess championship.
 \newblock {\em Communications of the ACM}, 31(8):992--995, 1988.
-
-\bibitem{turn0search10}
-Phamoxtech.
-\newblock Ibm deep blue: The chess machine that beat a world champion, 2023.
-\newblock Hardware VLSI chips and architecture.
 
 \bibitem{shannon1950xxii}
 Claude~E Shannon.
@@ -79,24 +88,14 @@ Claude~E Shannon.
 \newblock {\em The London, Edinburgh, and Dublin Philosophical Magazine and
   Journal of Science}, 41(314):256--275, 1950.
 
+\bibitem{thompson1986retrograde}
+Ken Thompson.
+\newblock Retrograde analysis of certain endgames.
+\newblock {\em ICGA Journal}, 9(3):131--139, 1986.
+
 \bibitem{turing1953digital}
 Alan~M Turing.
 \newblock Digital computers applied to games.
 \newblock {\em Faster than thought}, 1953.
-
-\bibitem{turn0search8}
-Chessprogramming Wiki.
-\newblock Deep blue – chessprogramming, 2025.
-\newblock Project origins and architecture.
-
-\bibitem{turn0search9}
-Wikipedia.
-\newblock {Deep Blue (chess computer)}, 2025.
-\newblock Design, hardware and software overview.
-
-\bibitem{turn0news55}
-{Wired}.
-\newblock What deep blue tells us about ai in 2017.
-\newblock {\em Wired}, 2017.
 
 \end{thebibliography}

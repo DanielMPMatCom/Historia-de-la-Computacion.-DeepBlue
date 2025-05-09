@@ -69,7 +69,7 @@
     máquina capaz de derrotar al campeón mundial de ajedrez 
     bajo condiciones reglamentarias. Se describen los 
     antecedentes desde ChipTest y Deep Thought, la arquitectura 
-    de hardware VLSI y del clúster IBM RS/6000 SP, los 
+    de \emph{hardware} VLSI y del clúster IBM RS/6000 SP, los 
     algoritmos de búsqueda híbrida en C con créditos diferidos y 
     la función de evaluación implementada en silicio. Además, 
     se examinan los mecanismos de paralelismo y balance de carga, 
@@ -110,7 +110,7 @@ estratégico.
 
 \textit{Deep Blue} no fue un simple programa de ajedrez, sino un 
 sistema computacional altamente especializado que integraba 
-componentes de hardware diseñados específicamente para el 
+componentes de \emph{hardware} diseñados específicamente para el 
 cálculo masivo de posiciones y movimientos posibles, junto con 
 sofisticados algoritmos de búsqueda y evaluación posicional. La 
 arquitectura del sistema combinó miles de procesadores en 
@@ -125,7 +125,7 @@ técnico relevante es su enfoque híbrido de solución: una
 articulación precisa entre potencia de cálculo, paralelismo 
 masivo y conocimiento experto codificado. Este informe se centra 
 en analizar los componentes técnicos que hicieron posible dicha 
-hazaña, incluyendo tanto los aspectos de hardware como los 
+hazaña, incluyendo tanto los aspectos de \emph{hardware} como los 
 mecanismos algorítmicos empleados, y cómo estos interactúan de 
 forma coordinada para lograr un rendimiento sobresaliente en la 
 resolución de un problema complejo como el ajedrez.
@@ -198,9 +198,14 @@ ChipTest estaba controlada por una estación de trabajo
 Sun-3/160\footnote{Sun-3 es una serie de \emph{computer workstations} y servidores de UNIX producida por Sun Microsystems, lanzada el 9 de septiembre de 1985.} 
 y alcanzaba aproximadamente 50000 posiciones por 
 segundo. En 1986, ChipTest compitió en el North 
-American Computer Chess Championship (NACCC), donde, pese a contar con 
+American Computer Chess Championship (NACCC)\footnote{Campeonato 
+de ajedrez computacional que se celebró entre 1970 y 1994. 
+Organizado por la It was organised by the Association for 
+Computing Machinery (ACM) y por Monty Newborn, profesor de 
+Ciencia de la Computación en la Universidad McGill.}, 
+donde, pese a contar con 
 pruebas limitadas antes del torneo, consiguió recuperarse tras 
-un inicio adverso y obtuvo un resultado equilibrado 
+un inicio adverso (3 derrotas) y obtuvo un empate 
 \cite{hsu1990deep}.
 
 En agosto de 1987 se rediseñó ChipTest y se rebautizó como 
@@ -219,10 +224,12 @@ perfecto de 5-0 \cite{newborn1988results}.
 \subsection{Primeros éxitos y limitaciones}
 
 Deep Thought destacó en 1988 al compartir el primer puesto en el 
-Software Toolworks Open de Los Ángeles, donde venció al gran 
+Software Toolworks Open de Los Ángeles\footnote{Torneo de ajedrez celebrado en 1988 en Los Ángeles, notable por su relevancia en la historia del ajedrez computacional}, 
+donde venció al gran 
 maestro Bent Larsen, consiguiendo una valoración de rendimiento 
 de 2551 según la USCF (\emph{US Chess Federation}) y ganando 
-el Fredkin Intermediate Prize \cite{hsu1990grandmaster}. Asimismo, ganó el ACM Computer Chess 
+el Fredkin Intermediate Prize \cite{hsu1990grandmaster}. 
+Asimismo, ganó el ACM Computer Chess 
 Championship en Orlando ese mismo año \cite{hsu1990grandmaster}. Pese a 
 estos logros, la arquitectura de ChipTest y Deep Thought 
 permanecía limitada por un grado de paralelismo moderado, 
@@ -250,7 +257,7 @@ paso intermedio hacia lo que pronto sería conocido como
 división de investigación de IBM, el sistema heredó la 
 arquitectura basada en chips VLSI especializada para generar y 
 evaluar movimientos de ajedrez, al tiempo que incorporaba 
-herramientas de software más avanzadas para depuración, 
+herramientas de \emph{software} más avanzadas para depuración, 
 afinamiento de la función de evaluación y análisis de partidas 
 \cite{campbell2002deep}.
 
@@ -269,7 +276,8 @@ tras tres años de diseño de un chip de búsqueda único. La
 primera remesa de circuitos llegó en septiembre de ese año y, 
 una vez solucionados los defectos iniciales, en enero de 1996 se 
 dispuso de la versión estable. El sistema corría sobre un 
-clúster IBM RS/6000 SP de 36 nodos y empleaba 216 chips VLSI, 
+clúster IBM RS/6000 SP\footnote{Scalable POWERparallel es una serie discontinuada de supercomputadoras de la línea RS/6000 de IBM} 
+de 36 nodos y empleaba 216 chips VLSI, 
 cada uno capaz de explorar entre 1.6 y 2 millones de posiciones 
 por segundo. En conjunto, la máquina alcanzaba velocidades de 
 entre 50 y 100 millones de posiciones por segundo \cite{campbell2002deep}.    
@@ -287,8 +295,8 @@ máquina especialmente diseñada podía competir de tú a tú con la
 Tras el match de 1996 quedó patente la necesidad de mejorar la 
 función de evaluación y aumentar el paralelismo. En respuesta, 
 IBM diseñó un nuevo chip que amplió los rasgos de evaluación de 
-alrededor de 6 400 a más de 8 000, incorporó detección de 
-repeticiones en hardware y optimizaciones en generación de 
+alrededor de 6400 a más de 8000, incorporó detección de 
+repeticiones en \emph{hardware} y optimizaciones en generación de 
 jugadas, elevando la velocidad de cada chip a 2-2.5 millones de 
 posiciones por segundo. Además, el sistema pasó a disponer de 
 480 chips VLSI distribuidos en 30 nodos SP, duplicando con 
@@ -341,11 +349,12 @@ la eficiencia del sistema.
 
 El corazón de \textit{Deep Blue} es un clúster IBM RS/6000 SP 
 compuesto por treinta nodos equipados con procesadores Power2 
-Super Chip (P2SC), de los cuales veintiocho funcionan a una 
+Super Chip (P2SC)\footnote{Microprocesadores diseñados y comercializados por IBM para servidores y supercomputadoras}, 
+de los cuales veintiocho funcionan a una 
 frecuencia de 120 MHz y dos a 135 MHz. Cada nodo dispone de 1 GB 
 de memoria RAM y 4 GB de almacenamiento local. La interconexión 
 se realiza mediante un conmutador de alta velocidad que 
-implementa el estándar MPI, garantizando una latencia mínima en 
+implementa el estándar MPI (\emph{Message-Passing Interface Standard}), garantizando una latencia mínima en 
 el envío y recepción de posiciones de ajedrez durante la 
 búsqueda paralela \cite{campbell2002deep, hsu1999ibm}.
 
@@ -359,12 +368,17 @@ movimientos basado en lógica combinatoria (matriz 8x8), una
 función de evaluación en dos niveles —rápida (un ciclo de reloj) 
 y lenta (análisis columna por columna de estructuras complejas)—, 
 y un controlador de búsqueda alpha-beta de ventana nula con 
-extensiones locales (jaques, peones pasados, detección de 
-repeticiones en 32 plies) \cite{campbell2002deep}. Este diseño en 
+extensiones locales (jaques, peones pasados\footnote{Un \emph{peón pasado} 
+es aquel que no tiene peones enemigos en su misma columna ni en 
+las columnas adyacentes que puedan impedir su avance hacia la 
+octava fila}, detección de 
+repeticiones en 32 plies\footnote{Un \emph{ply} (o media jugada) 
+corresponde al movimiento de un solo bando; dos plies equivalen 
+a un movimiento completo de ambos jugadores}) \cite{campbell2002deep}. Este diseño en 
 silicio permite examinar, de forma acumulada, entre 2 y 2.5 
 millones de posiciones por segundo por chip. \cite{hsu1999ibm}
 
-\begin{figure}[h]
+\begin{figure}[h!]
     \centering
     \includegraphics[width=0.6\textwidth]{assets/deep-blue-chip.jpg}
     \caption{Esquema del chip VLSI de Deep Blue: generador de movimientos, evaluación rápida/lenta y controlador alpha-beta de ventana nula.}
@@ -375,15 +389,18 @@ millones de posiciones por segundo por chip. \cite{hsu1999ibm}
 
 
 La ejecución de la búsqueda se organiza jerárquicamente en tres 
-niveles. En el nivel superior, un nodo maestro realiza las 
-primeras iteraciones de la búsqueda, generando posiciones 
-“hoja” de tamaño medio. A continuación, esos nodos hoja se 
-distribuyen entre veintinueve nodos trabajadores que profundizan 
+niveles. De los procesadores SP uno es designado como maestro y el resto como trabajadores.
+En el nivel superior, el nodo maestro realiza las 
+primeras iteraciones de la búsqueda, explorando las ramas superiores del árbol de juego, 
+generando posiciones 
+“hoja” y distribuyéndolas entre los nodos trabajadores. 
+A continuación, esos nodos trabajadores profundizan 
 el análisis unas pocas plies más, aplicando tablas de 
 transposición y heurísticas de selección. Finalmente, cada 
 trabajador delega las posiciones finales a un grupo de chips 
-VLSI (16 por nodo) para que efectúen la búsqueda más profunda y 
-quiescente en hardware. Esta arquitectura maestro-trabajador-chip 
+VLSI (16 por nodo) para que realicen en \emph{hardware} la fase más 
+profunda y estable de la exploración del árbol de juego. 
+Esta arquitectura maestro-trabajador-chip 
 maximiza el paralelismo y mantiene siempre ocupados tanto los 
 procesadores como los chips especializados \cite{campbell2002deep, hsu1999ibm}.
 
@@ -399,57 +416,80 @@ procesadores como los chips especializados \cite{campbell2002deep, hsu1999ibm}.
 \section{Algoritmos de búsqueda y evaluación}
 
 La fortaleza de \textit{Deep Blue} radica en la combinación 
-sinérgica de un motor de búsqueda en software con una evaluación 
-especializada en hardware. Este enfoque híbrido permite 
+sinérgica de un motor de búsqueda en \emph{software} con una evaluación 
+especializada en \emph{hardware}. Este enfoque híbrido permite 
 explotar al máximo tanto la flexibilidad algorítmica como la 
-velocidad de procesamiento en silicio \cite{campbell1999search}.
+velocidad de procesamiento en silicio.
 
 \subsection{Búsqueda selectiva híbrida}
 
 El motor en C emplea el algoritmo “dual credit with delayed 
 extensions”, que otorga \emph{créditos} parciales a movimientos 
-forzantes o de elevado carácter táctico (FFP) y sólo los 
+forzantes (FFP por sus siglas en inglés)\footnote{Secuencias de movimientos en que un 
+bando efectúa una jugada forzante (como un jaque o una captura decisiva)
+y el oponente está prácticamente obligado a responder de manera 
+concreta} o de elevado carácter táctico  y sólo los 
 \emph{canjea} cuando su acumulación supera un umbral predefinido, 
 evitando así explosiones en la exploración del árbol de juego. 
 Para preservar la coherencia de la 
-Variación Principal, cada bando mantiene su propia cuenta de 
+Variación Principal\footnote{Secuencia de movimientos que el programa considera óptima para ambos bandos, según el análisis actual.}, 
+cada bando mantiene su propia cuenta de 
 crédito y, al extenderse uno, se descuenta el mismo importe al 
-adversario, garantizando un “sobre de búsqueda” que impide 
+adversario, garantizando un “\emph{search envelope}”\footnote{Rango 
+de profundidad mínima garantizada que el algoritmo debe mantener 
+para todas las ramas relevantes, de modo que la exploración no 
+oscile entre profundidades muy distintas en posiciones similares.} 
+que impide 
 re-búsquedas oscilantes. Gracias a este 
 mecanismo, \textit{Deep Blue} ajusta dinámicamente la 
 profundidad de búsqueda en función de la complejidad táctica de 
 la posición, llegando a profundidades efectivas de hasta 
 cuarenta plies en las variantes más forzadas \cite{campbell1999search}.
 
-\subsection{Evaluación en hardware}
+\subsection{Evaluación en \emph{hardware}}
 
 La evaluación de posiciones se realiza completamente en 
-silicio mediante más de 8 000 patrones VLSI. En un primer paso, 
+silicio mediante más de 8000 patrones VLSI. En un primer paso, 
 la evaluación rápida suma en un único ciclo de reloj los valores 
 básicos de material y posicionamiento. A continuación, la 
 evaluación lenta analiza columna por columna estructuras 
-posicionales complejas —como seguridad de rey, configuración de 
-peones y control de casillas críticas— utilizando tablas 
+posicionales complejas (como seguridad de rey, configuración de 
+peones y control de casillas críticas) utilizando tablas 
 parametrizables cuyos pesos fueron ajustados por herramientas 
 automáticas y entrenamiento comparativo. Este diseño asegura que cada 
 evaluación se ejecute en tiempo constante, sin degradar la 
 velocidad global de búsqueda \cite{campbell1999search}.
 
-\subsection{Extensiones y búsqueda cuiescente}
+\subsection{Extensiones y búsqueda quiescente}
 
-Para mitigar el “efecto horizonte” y capturar tácticas 
+Para mitigar el “efecto horizonte”\footnote{Fenómeno que puede ocurrir 
+en juegos de estrategia, especialmente en el ajedrez, donde se 
+limita la capacidad de analizar las consecuencias de una jugada 
+a un número finito de pasos debido a la complejidad del juego.} 
+y capturar tácticas 
 decisivas, \textit{Deep Blue} aplica extensiones locales y 
-búsqueda cuiescente tanto en hardware como en software. 
+búsqueda quiescente\footnote{Algoritmo que se utiliza 
+habitualmente para extender la búsqueda en nodos inestables en 
+árboles de juego minimax en programas informáticos.} 
+tanto en \emph{hardware} como en \emph{software}. 
 Entre los criterios de extensión destacan la \emph{singularidad} 
 (cuando un movimiento es claramente superior a todas las alternativas, 
-se extiende 1-2 plies adicionales) y los \emph{chequeos} o 
-\emph{empuje de peón a séptima}, que reciben tratamiento 
+se extiende 1-2 plies adicionales) y los \emph{jaques} o 
+\emph{peones pasados}\footnote{Un peón pasado es aquel que no puede ser detenido por peones enemigos en su misma o en las columnas adyacentes.}, 
+que reciben tratamiento 
 preferente para explorar líneas forzadas. 
 La detección de repeticiones se implementa mediante un buffer 
 circular de 32 plies en el chip, que invalida automáticamente 
-ramas cíclicas mediante un fallo bajo (“fail-low”) \cite{campbell1999search}.  
+ramas cíclicas mediante un “\emph{fail-low}”\footnote{En 
+las variantes de poda alfa-beta, \emph{fail-low} 
+ocurre en un nodo cuando ninguna de las jugadas exploradas 
+logra elevar el valor evaluado por encima de la cota inferior 
+\(\alpha\). Este resultado suele emplearse 
+para terminar la exploración precozmente, ahorrando cómputo en 
+ramas que no pueden mejorar la decisión actual.} 
+\cite{campbell1999search}.  
 
-La búsqueda cuiescente continúa hasta que no quedan capturas 
+La búsqueda quiescente continúa hasta que no quedan capturas 
 críticas ni amenazas inmediatas, garantizando que sólo se 
 evalúen posiciones \emph{quietas} y evitando así que variantes 
 tácticas escapadas distorsionen la valoración final.
@@ -472,7 +512,7 @@ tácticas escapadas distorsionen la valoración final.
 La capacidad de \textit{Deep Blue} para explorar eficientemente 
 espacios de estado inmensos no habría sido posible sin un diseño 
 de paralelismo multinivel cuidadosamente articulado. A lo largo 
-de la búsqueda, se combinan técnicas de paralelismo en software 
+de la búsqueda, se combinan técnicas de paralelismo en \emph{software} 
 (que permiten dividir dinámicamente el árbol de juego entre 
 múltiples procesadores) con un despacho asíncrono de tareas a 
 cientos de chips especializados. Este enfoque mixto optimiza la 
@@ -483,36 +523,47 @@ sistema previo, revela asimismo los desafíos de la escalabilidad
 en arquitecturas de gran tamaño \cite{campbell2002deep}. 
 
 
-\subsection{Paralelismo en software}
+\subsection{Paralelismo en \emph{software}}
 
-El paralelismo en software de \textit{Deep Blue} se articula en 
+El paralelismo en \emph{software} de \textit{Deep Blue} se articula en 
 varios niveles para maximizar el aprovechamiento de los 30 
-nodos SP antes de delegar en hardware. En primer lugar, se 
+nodos SP antes de delegar en \emph{hardware}. En primer lugar, se 
 emplea \emph{PV-parallelism}, donde tras explorar el primer 
 movimiento de la Variación Principal (PV) todas las alternativas 
 pueden evaluarse en paralelo con ventanas de búsqueda 
-desplazadas para conservar la selectividad \cite{campbell2002deep}. 
-En segundo lugar, en nodos que “fallan alto” (fail-high), se 
+desplazadas para conservar la selectividad. 
+En segundo lugar, en nodos de \emph{fail-high}\footnote{Un 
+\emph{fail-high} se produce cuando, en la poda 
+alfa-beta, la evaluación de un nodo supera la cota superior 
+\(\beta\), indicando que ya existe una jugada conocida que 
+anulará esa posición y, por tanto, no es necesario explorar el 
+resto de sus sucesores.}, se 
 pueden lanzar en paralelo búsquedas de profundidad reducida 
-para refinar amenazas y extensiones, mientras que en nodos que 
-“fallan bajo” (fail-low) todas las ramas se procesan 
-concurrentemente hasta encontrar un corte \cite{campbell2002deep}. 
+para refinar amenazas y extensiones, mientras que en nodos de 
+\emph{fail-low} todas las ramas se procesan 
+concurrentemente hasta encontrar un corte. 
 Finalmente, la sincronización global se realiza al término de 
 cada iteración de búsqueda, garantizando consistencia de las 
 tablas de transposición y de los datos de análisis antes de 
 pasar a la siguiente profundidad \cite{campbell2002deep}.
 
-\subsection{Offloading a hardware}
+\subsection{\emph{Offloading} a \emph{hardware}}
 
-Una vez exploradas varias capas en software, \textit{Deep Blue} 
-\emph{offloads} de forma asíncrona las posiciones finales a los 
+Una vez exploradas varias capas en \emph{software}, \textit{Deep Blue} 
+\emph{offloads}\footnote{En este contexto, “\emph{offload}” hace 
+referencia a la transferencia asíncrona de tareas de búsqueda 
+finales desde el procesador principal a los chips VLSI 
+especializados, delegando en estos aceleradores el cómputo 
+intensivo para aprovechar sus capacidades de evaluación en 
+silicio.} 
+de forma asíncrona las posiciones finales a los 
 480 chips VLSI. Cada nodo SP puede gestionar múltiples búsquedas 
-de chip en paralelo, enviando trabajos y recibiendo resultados 
+de chip en paralelo, enviando tareas y recibiendo resultados 
 sin bloquearse en espera de la finalización de cada tarea 
 \cite{campbell2002deep}. Para mantener un balance de carga 
-adecuado, las búsquedas en hardware que exceden las 8000 
+adecuado, las búsquedas en \emph{hardware} que exceden las 8000 
 posiciones expandidas pueden abortarse y reencolarse en 
-software, permitiendo dividirlas en subproblemas más pequeños y 
+\emph{software}, permitiendo dividirlas en subproblemas más pequeños y 
 redistribuirlos entre otros nodos SP \cite{campbell2002deep}.
 
 \subsection{Medición de eficiencia}
@@ -564,32 +615,41 @@ los finales y un uso óptimo del tiempo de cómputo disponible
 
 El libro de aperturas de \textit{Deep Blue} fue ensamblado 
 manualmente por el Gran Maestro Joel Benjamin, junto con los 
-Grandmasters Nick De Firmian, John Fedorowicz y Miguel Illescas, 
+Grandes Maestros Nick De Firmian, John Fedorowicz y Miguel Illescas, 
 y contenía aproximadamente 4 000 posiciones seleccionadas según 
 la experiencia práctica del sistema \cite{campbell2002deep}. Cada 
 posición del libro fue comprobada mediante ejecuciones nocturnas 
 de \textit{Deep Blue} para asegurar que las líneas propuestas 
 resultaran razonables bajo el motor de búsqueda, priorizando 
 aquellas aperturas en las que el sistema demostraba mayor 
-robustez táctica \cite{campbell2002deep}. Antes de cada encuentro, 
+robustez táctica. Antes de cada encuentro, 
 se elegía un repertorio específico en función de la situación 
-del match y de la elección de color, incluyéndose un pequeño 
-“override book” de última hora para correcciones de último 
+del \emph{match} y de la elección de color, incluyéndose un pequeño 
+“\emph{override book}”\footnote{Un \emph{override book} es un 
+subconjunto de aperturas y líneas de juego añadido justo antes 
+de la partida para corregir o anular jugadas del libro principal, 
+incorporando ajustes de última hora basados en preparaciones 
+específicas contra el adversario.} 
+de última hora para correcciones de último 
 minuto \cite{campbell2002deep}.
 
-\subsection{Extended Book}
+\subsection{\emph{Extended Book}}
 
 Cuando una posición no estaba cubierta por el libro principal, 
-\textit{Deep Blue} empleaba un “libro extendido” basado en un 
+\textit{Deep Blue} empleaba un \emph{extended book} basado en un 
 repositorio de cerca de 700 000 partidas de Grandes Maestros 
 \cite{campbell2002deep}. A cada jugada candidateada se le asignaba 
 una bonificación escalar calculada a partir de la frecuencia de 
 aparición en la base de datos, la fuerza de los jugadores que la 
-emplearon, los resultados estadísticos y las anotaciones 
-(marcas “!” o “?”), de manera no lineal y ponderada para 
+emplearon, los resultados estadísticos y las anotaciones, 
+de manera no lineal y ponderada para 
 reflejar consenso teórico de apertura \cite{campbell2002deep}. 
 En situaciones extremas, una bonificación superior a medio 
-peón permitía ejecutar la jugada directamente sin activación de 
+peón\footnote{En ajedrez computacional, “medio peón” (\emph{half pawn}) 
+equivale a 50 centipawns; un centipawn es la centésima parte 
+del valor de un peón estándar y sirve para medir diferencias de 
+valoración posicional con mayor granularidad.} 
+permitía ejecutar la jugada directamente sin activación de 
 la búsqueda completa \cite{campbell2002deep}.
 
 \subsection{Bases de datos de finales}
@@ -598,14 +658,18 @@ Para los finales, \textit{Deep Blue} recurría a bases de datos
 de finales con todas las posiciones de hasta cinco piezas y 
 casos seleccionados de seis piezas (por ejemplo, peones 
 bloqueados), extraídas principalmente de Colecciones de Ken 
-Thompson y contribuciones de Lewis Stiller \cite{campbell2002deep}. 
+Thompson \cite{thompson1986retrograde} y contribuciones de Lewis Stiller \cite{campbell2002deep}. 
 Cada posición se indexaba como un bit (ganar o no perder), de 
 modo que al alcanzarse durante la búsqueda se aplicaba 
-inmediatamente un \emph{cutoff} con valor teórico—alto orden 
-para la victoria o empate, bajo orden para el desempate según 
-evaluación estática—sin necesidad de desarrollar subárboles 
-adicionales \cite{campbell2002deep}. Estas bases residían localmente 
-en cada nodo SP y en arreglos RAID compartidos, garantizando 
+inmediatamente un \emph{cutoff} sin necesidad de desarrollar subárboles 
+adicionales según el valor del resultado, 
+compuesto por dos partes: 
+\emph{high-order} para la victoria o empate, \emph{low-order} 
+para el desempate. \cite{campbell2002deep}. Estas bases residían localmente 
+en cada nodo SP y en arreglos RAID\footnote{Un grupo/matriz redundante de discos independientes (también, RAID, del inglés \emph{redundant array of independent disks}) 
+hace referencia a un sistema de almacenamiento de datos que 
+utiliza múltiples unidades, entre las cuales se distribuyen o 
+replican los datos.} compartidos, garantizando 
 acceso rápido en tiempo de búsqueda \cite{campbell2002deep}.
 
 \subsection{Control de tiempo}
@@ -635,69 +699,75 @@ ocurrió una vez en todo el match de 1997 \cite{campbell2002deep}.
 
 
 
-
-
 \section{Impacto y legado}
 
-La influencia de \textit{Deep Blue} trasciende el ámbito 
-ajedrecístico para convertirse en un referente de cómo la 
-conjunción de hardware especializado, algoritmos avanzados y 
-conocimiento humano articulado puede redefinir las capacidades 
-de la inteligencia artificial. Su victoria histórica frente a 
-Garry Kasparov en 1997 no solo marcó un hito técnico, sino que 
-desencadenó un debate global sobre los límites de la creatividad 
-mecánica, estimuló nuevas líneas de investigación en 
-supercomputación y estableció las bases para la adopción de 
-arquitecturas híbridas en múltiples dominios científicos y de 
-ingeniería \cite{wired1997,wikideepblue}.
+La victoria de \textit{Deep Blue} en 1997 marcó un antes y un 
+después en la historia de la inteligencia artificial y la 
+supercomputación. Por primera vez, una máquina derrotaba bajo 
+control reglamentario a un campeón mundial de ajedrez, 
+demostrando de modo fehaciente que arquitecturas masivamente 
+paralelas y \emph{hardware} especializado podían resolver 
+problemas de búsqueda combinatoria de gran escala 
+\cite{ibmHistoryDeepBlue,greenemeier2017}. Este suceso desencadenó un 
+debate sobre los límites de la creatividad mecánica y la naturaleza 
+de la inteligencia, al tiempo que consolidó la confianza 
+institucional y mediática en la investigación aplicada en IA.
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/deepbluevskasparov.jpg}
+    \caption{El campeón mundial de ajedrez Garry Kasparov (izq.) realiza un movimiento durante su cuarta partida contra \emph{Deep Blue}.}
+    \label{fig:deepblue}
+\end{figure}
 
 
-\subsection{Hito en IA y supercomputación}
-
-En mayo de 1997, \textit{Deep Blue} se convirtió en el primer 
-sistema informático capaz de derrotar a un campeón mundial de 
-ajedrez bajo condiciones reglamentarias de torneo, venciendo a 
-Garry Kasparov por 3\(\frac{1}{2}\)-2\(\frac{1}{2}\) en 
-Nueva York \cite{wired1997,wikideepblue}. Este logro 
-marcó un antes y un después en la historia de la inteligencia 
-artificial y la supercomputación, pues demostró la viabilidad 
-de arquitecturas masivamente paralelas y hardware especializado 
-para resolver problemas de búsqueda combinatoria de gran 
-magnitud \cite{wired1997}. La gran repercusión mediática y 
-científica llevó a la concesión del Premio Fredkin por parte 
-de Carnegie Mellon, dotado con 100 000 USD, además de los 
-incentivos económicos compartidos con Kasparov y los 
-desarrolladores de IBM \cite{wikideepblue,time2013}.  
+El hecho generó titulares en todo el mundo y 
+revalorizó la supercomputación como herramienta de investigación 
+científica. Medios como \emph{Scientific American} analizaron las 
+implicaciones del triunfo, señalando cómo el empleo de 480 chips 
+VLSI y 30 nodos RS/6000 SP redefinió las expectativas sobre el 
+rendimiento de las máquinas \cite{greenemeier2017}. La repercusión 
+académica fue inmediata: Carnegie Mellon otorgó el Premio Fredkin, 
+valorado en 100 000 USD, y se multiplicaron los congresos y 
+talleres dedicados a la paralelización extrema y al diseño de 
+aceleradores especializados \cite{ibmHistoryDeepBlue}.
 
 \subsection{Influencias posteriores}
 
-El enfoque de paralelismo masivo y procesamiento en silicio 
-diseñado para \textit{Deep Blue} inspiró posteriormente 
-desarrollos en diversas áreas. En análisis financiero, se 
-aplicaron técnicas semejantes para la valoración rápida de 
-carteras y la simulación de escenarios de riesgo mediante 
-computación distribuida \cite{wired2015}. En biología 
-computacional, los métodos de búsqueda selectiva y extensiones 
-fraccionarias se adaptaron a problemas de alineamiento de 
-secuencias y predicción de pliegue de proteínas, donde la 
-exploración de grandes espacios de soluciones es crítica 
-\cite{newyorker2006}. Asimismo, la idea de “offloading” 
-asíncrono a aceleradores especializados sentó las bases para el 
-uso de GPUs y FPGAs en aprendizaje profundo y simulaciones 
-científicas de alto rendimiento \cite{newyorker2006}.  
+Tras el éxito de \textit{Deep Blue}, el paradigma de desplazar 
+cargas críticas de cálculo a hardware dedicado se expandió 
+rápidamente. En el ámbito financiero, los \emph{hedge funds} 
+adoptaron técnicas de \emph{cluster computing} para simulaciones de 
+riesgo en tiempo real, inspiradas en la arquitectura 
+maestro-trabajador-chip de IBM \cite{aung2010}. Asimismo, la práctica 
+de \emph{offloading} a 
+aceleradores (ahora GPUs y FPGAs) se consolidó en aplicaciones de 
+aprendizaje profundo, siguiendo el modelo pionero de \textit{Deep 
+Blue} \cite{forbes2019explainable}.
 
-\subsection{Curiosidades y datos interesantes}
+\subsection{Repercusiones histórico-culturales}
 
-Un caso curioso del match de 1997 ocurrió en la cuarta partida, 
-cuando \textit{Deep Blue} ejecutó un movimiento poco intuitivo 
-que Kasparov interpretó como “creatividad” de la máquina. Años 
-después se reveló que dicho movimiento fue provocado por un 
-error en el código de selección en un submódulo de evaluación, y 
-no por intervención humana ni por un “insight” genuino del 
-sistema \cite{wikideepblue,time2013}. Este episodio 
-alimentó el debate sobre la transparencia de los sistemas de 
-IA y la necesidad de auditorías de “caja blanca” en aplicaciones 
-críticas.  
+El enfrentamiento humano-máquina suscitó reflexiones en filosofía y 
+sociología de la ciencia sobre la confianza en sistemas automatizados. 
+Documentales como \emph{Game Over: Kasparov and the Machine} (2003) 
+examinaron las acusaciones de falta de transparencia en el diseño de 
+\textit{Deep Blue}, alimentando la demanda de auditorías de “caja 
+blanca” en sistemas críticos. A largo plazo, 
+esta preocupación influyó en la creación de estándares de 
+explicabilidad en IA, que hoy exigen trazabilidad de decisiones 
+algorítmicas en sectores como la sanidad y la justicia 
+\cite{korf1997does,bory2019deep}.
+
+\subsection{Curiosidades}
+
+Durante la cuarta partida de 1997, \textit{Deep Blue} ejecutó un 
+movimiento inesperado (que Kasparov calificó de “creatividad” 
+ante lo insólito), el cual años después se atribuyó a un desajuste 
+en los parámetros de evaluación, no a un cálculo “creativo” de la 
+máquina \cite{latson2015}. Este incidente ilustró la delgada línea 
+entre la aparente originalidad de una IA y la complejidad de sus 
+reglas internas, subrayando la importancia de la transparencia para 
+comprender sus decisiones.
 
 
 
@@ -709,39 +779,39 @@ críticas.
 
 
 La experiencia de \textit{Deep Blue} pone de manifiesto cómo la 
-confluencia de tres líneas de innovación (hardware VLSI 
+confluencia de tres líneas de innovación (\emph{hardware} VLSI 
 especializado, algoritmos de búsqueda selectiva y bases de datos 
 inteligentes) permitió superar las barreras históricas entre el 
 ajedrez humano y la computadora. En primer lugar, los chips 
-VLSI diseñados ad hoc para generación de movimientos y 
+VLSI diseñados \emph{ad hoc} para generación de movimientos y 
 evaluación en un ciclo de reloj demostraron que el procesamiento 
 masivamente paralelo podía explotar la fuerza bruta sin 
-sacrificar precisión táctica \cite{campbell2002deep}\cite{turn0search10}. 
-En segundo lugar, el algoritmo de “dual credit with delayed 
-extensions” introdujo una búsqueda altamente no uniforme que 
+sacrificar precisión táctica \cite{campbell2002deep}. 
+En segundo lugar, el algoritmo de “\emph{dual credit with delayed 
+extensions}” introdujo una búsqueda altamente no uniforme que 
 adaptaba dinámicamente la profundidad según la complejidad de 
 la posición, con extensiones fraccionarias que prevenían 
 explosiones combinatorias y preservaban robustez frente a 
-amenazas tácticas \cite{turn0search3}. Por último, la 
-integración de un libro principal, un “extended book” de 700 000 
+amenazas tácticas \cite{aung2010}. Por último, la 
+integración de un libro principal, un “\emph{extended book}” de 700 000 
 partidas y bases de finales con todos los casos de hasta cinco 
 piezas proporcionó un conocimiento posicional sólido que 
 complementó el poder de cómputo, reduciendo la dependencia en 
 el cálculo exhaustivo en fases teóricamente bien entendidas 
-\cite{turn0search2}\cite{turn0search4}.
+\cite{greenemeier2017}.
 
 Históricamente, la victoria de \textit{Deep Blue} sobre Garry 
 Kasparov en 1997 simboliza el tránsito de la IA simbólica y de 
 fuerza bruta hacia sistemas híbridos que combinan aprendizaje 
-experto con arquitecturas de alto rendimiento \cite{turn0search9}. 
+experto con arquitecturas de alto rendimiento. 
 Este hito no sólo impulsó la investigación en supercomputación y 
 en aceleradores especializados (preludiando el uso extensivo de 
 GPUs y FPGAs en IA), sino que también abrió el camino para metodologías 
 que hoy sustentan desde la biología computacional hasta el 
-análisis financiero en tiempo real \cite{turn0news55}\cite{turn0search8}. 
+análisis financiero en tiempo real \cite{wired2017ai}. 
 En suma, \textit{Deep Blue} demostró que el equilibrio entre 
 conocimiento experto, paralelismo extremo y algoritmos 
-selectivos puede superar el brute force puro, marcando el 
+selectivos puede superar la fuerza bruta pura, marcando el 
 umbral de la era moderna de la inteligencia artificial aplicada.
 
 
