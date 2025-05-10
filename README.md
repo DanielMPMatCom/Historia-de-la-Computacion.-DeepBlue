@@ -1,1 +1,3 @@
-# Historia-de-la-Computaci-n.-DeepBlue
+# Historia-de-la-Computación.-DeepBlue
+
+![Deep Blue](assets/deepbluevskasparov.jpg)

@@ -145,6 +145,7 @@ INPUT .\assets\MatCom sin fondo color.png
 INPUT .\assets\MatCom sin fondo color.png
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr17.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -163,6 +164,7 @@ INPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBl
 INPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.toc
 INPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.toc
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
@@ -171,35 +173,36 @@ INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmmi6.
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti12.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
 OUTPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.toc
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmr10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbx12.tfm
-INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
-INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
-INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
-INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
-INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
-INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
-INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
-INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
-INPUT .\assets\deepblue.jpg
-INPUT .\assets\deepblue.jpg
-INPUT .\assets\deepblue.jpg
-INPUT .\assets\deepblue.jpg
-INPUT .\assets\deepblue.jpg
-INPUT .\assets\deepblue.jpg
-INPUT .\assets\deepblue.jpg
-INPUT .\assets\deep-blue-chip.jpg
-INPUT .\assets\deep-blue-chip.jpg
-INPUT .\assets\deep-blue-chip.jpg
-INPUT .\assets\deep-blue-chip.jpg
-INPUT .\assets\deep-blue-chip.jpg
-INPUT .\assets\deep-blue-chip.jpg
-INPUT .\assets\deep-blue-chip.jpg
 INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmti10.tfm
+INPUT C:\Users\DanielHP\AppData\Local\Programs\MiKTeX\fonts\tfm\public\cm\cmbxti10.tfm
+INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
+INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
+INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
+INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
+INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
+INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
+INPUT .\assets\Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg
+INPUT .\assets\deepblue.jpg
+INPUT .\assets\deepblue.jpg
+INPUT .\assets\deepblue.jpg
+INPUT .\assets\deepblue.jpg
+INPUT .\assets\deepblue.jpg
+INPUT .\assets\deepblue.jpg
+INPUT .\assets\deepblue.jpg
+INPUT .\assets\deep-blue-chip.jpg
+INPUT .\assets\deep-blue-chip.jpg
+INPUT .\assets\deep-blue-chip.jpg
+INPUT .\assets\deep-blue-chip.jpg
+INPUT .\assets\deep-blue-chip.jpg
+INPUT .\assets\deep-blue-chip.jpg
+INPUT .\assets\deep-blue-chip.jpg
 INPUT .\assets\deepbluevskasparov.jpg
 INPUT .\assets\deepbluevskasparov.jpg
 INPUT .\assets\deepbluevskasparov.jpg
@@ -207,6 +210,13 @@ INPUT .\assets\deepbluevskasparov.jpg
 INPUT .\assets\deepbluevskasparov.jpg
 INPUT .\assets\deepbluevskasparov.jpg
 INPUT .\assets\deepbluevskasparov.jpg
+INPUT .\assets\team.jpg
+INPUT .\assets\team.jpg
+INPUT .\assets\team.jpg
+INPUT .\assets\team.jpg
+INPUT .\assets\team.jpg
+INPUT .\assets\team.jpg
+INPUT .\assets\team.jpg
 INPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl
 INPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl
 INPUT d:\Escuela\CComputación\Cuarto Año\HC\Historia-de-la-Computacion.-DeepBlue\build\report.bbl

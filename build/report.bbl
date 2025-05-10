@@ -1,5 +1,17 @@
 \begin{thebibliography}{10}
 
+\bibitem{linkedin_anantharaman}
+Thomas~S. Anantharaman.
+\newblock Profile on linkedin.
+\newblock \url{https://www.linkedin.com/in/thomas-anantharaman-15a1997}, 2025.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{anantharaman1990statistical}
+Thomas~Satyaprakash Anantharaman.
+\newblock {\em A statistical study of selective min-max search in computer
+  chess}.
+\newblock Carnegie Mellon University, 1990.
+
 \bibitem{aung2010}
 Lawrence Aung.
 \newblock Deep blue: The history and engineering behind computer chess.
@@ -25,6 +37,48 @@ Murray Campbell, A~Joseph Hoane~Jr, and Feng-hsiung Hsu.
 \newblock Deep blue.
 \newblock {\em Artificial intelligence}, 134(1-2):57--83, 2002.
 
+\bibitem{chessprogNowatzyk}
+{Chessprogramming Wiki}.
+\newblock Andreas nowatzyk.
+\newblock \url{https://www.chessprogramming.org/Andreas_Nowatzyk}, 2025.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{chessprog_deepthought}
+{Chessprogramming Wiki}.
+\newblock Deep thought.
+\newblock \url{https://www.chessprogramming.org/Deep_Thought}, 2025.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{chessprog_hsu}
+{Chessprogramming Wiki}.
+\newblock Feng-hsiung hsu.
+\newblock \url{https://www.chessprogramming.org/Feng-hsiung_Hsu}, 2025.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{chessprog_hoane}
+{Chessprogramming Wiki}.
+\newblock Joe hoane.
+\newblock \url{https://www.chessprogramming.org/Joe_Hoane}, 2025.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{chessprog_murray}
+{Chessprogramming Wiki}.
+\newblock Murray campbell.
+\newblock \url{https://www.chessprogramming.org/Murray_Campbell}, 2025.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{chessprog_anantharaman}
+{Chessprogramming Wiki}.
+\newblock Thomas s. anantharaman.
+\newblock \url{https://www.chessprogramming.org/Thomas_Anantharaman}, 2025.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{cmuNowatzyk}
+{CMU School of Computer Science}.
+\newblock Andreas nowatzyk, then and now.
+\newblock \url{https://www.cs.cmu.edu/~raj-symposium/nowatzyk.html}, 2025.
+\newblock Accessed: 2025-05-09.
+
 \bibitem{forbes2019explainable}
 {Forbes Technology Council}.
 \newblock What deep blue and alphago can teach us about explainable ai.
@@ -48,16 +102,50 @@ Feng-hsiung Hsu.
 \newblock Ibm's deep blue chess grandmaster chips.
 \newblock {\em IEEE micro}, 19(2):70--81, 1999.
 
+\bibitem{hsu2022behind}
+Feng-Hsiung Hsu.
+\newblock {\em Behind Deep Blue: Building the computer that defeated the world
+  chess champion}.
+\newblock Princeton University Press, 2022.
+
 \bibitem{hsu1990grandmaster}
 Feng-hsiung Hsu, Thomas Anantharaman, Murray Campbell, and Andreas Nowatzyk.
 \newblock A grandmaster chess machine.
 \newblock {\em Scientific American}, 263(4):44--51, 1990.
+
+\bibitem{hsu1995deep}
+Feng-hsiung Hsu, Murray~S Campbell, and A~Joseph Hoane~Jr.
+\newblock Deep blue system overview.
+\newblock In {\em Proceedings of the 9th international conference on
+  Supercomputing}, pages 240--244, 1995.
 
 \bibitem{ibmHistoryDeepBlue}
 {IBM}.
 \newblock Deep blue.
 \newblock \url{https://www.ibm.com/history/deep-blue}, 2025.
 \newblock Accessed: 2025-05-09.
+
+\bibitem{ibmCampbellBio}
+{IBM}.
+\newblock Murray campbell.
+\newblock \url{https://research.ibm.com/people/murray-campbell}, 2025.
+\newblock Accessed: 2025-05-09.
+
+\bibitem{icore2004bod}
+{iCORE}.
+\newblock Board of directors.
+\newblock
+  \url{http://web.archive.org/web/20040626235113/http://www.icore.ca/about_bod.htm},
+  2004.
+\newblock Archived June 26, 2004; Accessed: 2025-05-09.
+
+\bibitem{itbhu_anantharaman}
+{ITBHU Global Alumni Association}.
+\newblock Time and life of prof. t r anantharaman.
+\newblock
+  \url{https://web.archive.org/web/20100905073010/http://www.itbhuglobal.org/chronicle/archives/2009/06/time_and_life_o.php},
+  2009.
+\newblock Archived: 2010-09-05; Accessed: 2025-05-09.
 
 \bibitem{korf1997does}
 Richard~E Korf.
@@ -81,6 +169,12 @@ Steven Levy.
 Monty Newborn and Danny Kopec.
 \newblock Results of acm's eighteenth computer chess championship.
 \newblock {\em Communications of the ACM}, 31(8):992--995, 1988.
+
+\bibitem{s3mpNowatzyk}
+A.~Nowatzyk, M.C. Browne, E.J. Kelly, and M.~Parkin.
+\newblock The s3.mp architecture: A local area multiprocessor.
+\newblock Conference Paper, Jan. 1993, 1993.
+\newblock Describes scalable shared memory and cache coherence.
 
 \bibitem{shannon1950xxii}
 Claude~E Shannon.

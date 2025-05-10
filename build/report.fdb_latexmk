@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex build/report"] 1746771159.32185 "build/report.aux" "build/report.bbl" "build/report" 1746771171.59077 0
-  "./build/referencias.bib" 1746771134 5196 f7ca26ed6054e923a65012d8e16dcec0 ""
+["bibtex build/report"] 1746848294.59946 "build/report.aux" "build/report.bbl" "build/report" 1746848372.13208 0
+  "./build/referencias.bib" 1746848276 9245 8c8f751e88f66f3662601b2202d97888 ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/bibtex/bst/bibtex/plain.bst" 1291864736 20613 bd3fbfa9f64872b81ac57a0dd2ed855f ""
-  "build/report.aux" 1746771168 7789 eaf71ed933a31434ef35a596926ae127 "pdflatex"
+  "build/report.aux" 1746848370 9781 d2bc478649b9b518b708555a1e709baa "pdflatex"
   (generated)
   "build/report.bbl"
   "build/report.blg"
   (rewritten before read)
-["pdflatex"] 1746771160.32168 "d:/Escuela/CComputación/Cuarto Año/HC/Historia-de-la-Computacion.-DeepBlue/report.tex" "build/report.pdf" "report" 1746771171.5928 0
+["pdflatex"] 1746848364.07888 "d:/Escuela/CComputación/Cuarto Año/HC/Historia-de-la-Computacion.-DeepBlue/report.tex" "build/report.pdf" "report" 1746848372.13306 0
   "C:/Users/DanielHP/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1746756201 82507 a9eef8696c92627b87e9975edea03b2a ""
   "C:/Users/DanielHP/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1743781400 12037581 218a50ed939c5118c97c5205fb74cb13 ""
   "C:/Users/DanielHP/AppData/Local/Programs/MiKTeX/fonts/tfm/public/cm/cmbx10.tfm" 1136765053 1328 c834bbb027764024c09d3d2bf908b5f0 ""
@@ -98,12 +98,13 @@
   "assets/deepblue.jpg" 1746334946 31939 6ac78a3559cecbacd1ba7ed8161a0869 ""
   "assets/deepbluevskasparov.jpg" 1746769116 134835 e31b580d44e53ad4c49748e8ba41029a ""
   "assets/logo.jpg" 1746328302 13390 b4e3af7fa76721d1ee69e47bbd001580 ""
-  "build/report.aux" 1746771168 7789 eaf71ed933a31434ef35a596926ae127 "pdflatex"
-  "build/report.bbl" 1746771160 3421 dce2e339022829d831b840ebec5a161a "bibtex build/report"
-  "build/report.out" 1746771168 5330 21e5cb06b08b1305ce62046052aab7df "pdflatex"
-  "build/report.toc" 1746771168 2689 3cdb3cc581a90078ed37f6f8c0e048cc "pdflatex"
-  "d:/Escuela/CComputación/Cuarto Año/HC/Historia-de-la-Computacion.-DeepBlue/report.tex" 1746771134 37517 0409a82fc7842b06d61374e679ef3334 ""
-  "report.tex" 1746771134 37517 0409a82fc7842b06d61374e679ef3334 ""
+  "assets/team.jpg" 1746846010 47154 b7946d6132ddeb335a6c4f5dbadc4018 ""
+  "build/report.aux" 1746848370 9781 d2bc478649b9b518b708555a1e709baa "pdflatex"
+  "build/report.bbl" 1746848295 6590 bb0af8f703de12866f4d0d0507ed6aeb "bibtex build/report"
+  "build/report.out" 1746848370 5428 2986b06b749c78b6effe8a954e385141 "pdflatex"
+  "build/report.toc" 1746848370 2813 d2cf732e2464bf4d59ae59ef09e9f93f "pdflatex"
+  "d:/Escuela/CComputación/Cuarto Año/HC/Historia-de-la-Computacion.-DeepBlue/report.tex" 1746848361 49733 7ff9db9c1421f480bee430194daa087e ""
+  "report.tex" 1746848361 49733 7ff9db9c1421f480bee430194daa087e ""
   (generated)
   "build/report.aux"
   "build/report.log"

@@ -23,7 +23,7 @@
 \titleformat{\subsection}{\normalfont\large\bfseries}{\thesubsection}{1em}{}
 
 % Título del informe
-\title{\textbf{La Automatización del Ajedrez DeepBlue} \\ \subtitle}
+\title{\textbf{La Automatización del Ajedrez \textit{Deep Blue}} \\ \subtitle}
 \author{Daniel Machado Pérez, C411 \\ Ariel González Gómez, C412}
 
 \newcommand{\subtitle}{\textit{Historia de la Computación}}
@@ -68,7 +68,7 @@
     componentes técnicos de \textit{Deep Blue}, la primera 
     máquina capaz de derrotar al campeón mundial de ajedrez 
     bajo condiciones reglamentarias. Se describen los 
-    antecedentes desde ChipTest y Deep Thought, la arquitectura 
+    antecedentes desde \emph{ChipTest} y \emph{Deep Thought}, la arquitectura 
     de \emph{hardware} VLSI y del clúster IBM RS/6000 SP, los 
     algoritmos de búsqueda híbrida en C con créditos diferidos y 
     la función de evaluación implementada en silicio. Además, 
@@ -82,7 +82,7 @@
 \end{abstract}
 
 \section*{Palabras clave}
-Deep Blue, 
+\textit{Deep Blue}, 
 ajedrez computacional, 
 arquitectura paralela, 
 IBM RS/6000 SP, 
@@ -155,8 +155,10 @@ surgieron los primeros esfuerzos teóricos y conceptuales para
 dotar a las máquinas de la capacidad de jugar al ajedrez. En 
 1949, Claude E. Shannon publicó el artículo \emph{“Programming a 
 Computer for Playing Chess”}, en el que planteó por primera vez 
-el uso de la técnica minimax combinada con funciones de 
-evaluación heurísticas y un corte alfa-beta rudimentario para 
+el uso de la técnica \footnote{Algoritmo de decisión utilizado en teoría de juegos para minimizar la posible pérdida en el peor de los casos. El algoritmo asume que el oponente juega de manera óptima para maximizar su ganancia.} 
+combinada con funciones de 
+evaluación heurísticas y un corte alfa-beta\footnote{Optimización del algoritmo minimax que reduce el número de nodos evaluados en el árbol de búsqueda. Mejora la eficiencia descartando ramas que no pueden influir en la decisión final.} 
+rudimentario para 
 reducir el espacio de búsqueda \cite{shannon1950xxii}. En este 
 trabajo, Shannon (considerado el padre de la teoría de la 
 información) estimó la complejidad del árbol de juego de ajedrez 
@@ -179,51 +181,51 @@ combinar heurísticas de posición, generación de jugadas y
 cortes selectivos, prefigurando los sistemas que conformarían la 
 era moderna del ajedrez computacional.
 
-\subsection{De ChipTest a Deep Thought}
+\subsection{De \emph{ChipTest} a \emph{Deep Thought}}
 
 En la década de los 80 se manifestaban esfuerzos tempranos en 
 el diseño de una máquina capaz de jugar ajedrez a un nivel comparable
 al de los grandes maestros. Fue así como en la Universidad 
-Carnegie Mellon nacían los proyectos ChipTest y Deep Thought,
-precursores de Deep Blue.
+Carnegie Mellon nacían los proyectos \emph{ChipTest} y \emph{Deep Thought},
+precursores de \textit{Deep Blue}.
 
 
-\subsection{ChipTest}
-El proyecto ChipTest se inició en 1985 bajo la dirección de 
+\subsection{\emph{ChipTest}}
+El proyecto \emph{ChipTest} se inició en 1985 bajo la dirección de 
 Feng-hsiung Hsu, Thomas 
 Anantharaman y Murray Campbell, con el objetivo de explorar la 
 viabilidad de un generador de movimientos de ajedrez 
-implementado en VLSI (\emph{Very Large Scale Integration}). La primera versión de 
-ChipTest estaba controlada por una estación de trabajo 
+implementado en VLSI (\emph{Very Large Scale Integration})\footnote{Proceso de creación de circuitos integrados (chips) mediante la combinación de millones de transistores en un solo chip. Permite una alta densidad de componentes y un bajo consumo de energía.}. 
+La primera versión de 
+\emph{ChipTest} estaba controlada por una estación de trabajo 
 Sun-3/160\footnote{Sun-3 es una serie de \emph{computer workstations} y servidores de UNIX producida por Sun Microsystems, lanzada el 9 de septiembre de 1985.} 
 y alcanzaba aproximadamente 50000 posiciones por 
-segundo. En 1986, ChipTest compitió en el North 
+segundo. En 1986, \emph{ChipTest} compitió en el North 
 American Computer Chess Championship (NACCC)\footnote{Campeonato 
 de ajedrez computacional que se celebró entre 1970 y 1994. 
-Organizado por la It was organised by the Association for 
-Computing Machinery (ACM) y por Monty Newborn, profesor de 
+Organizado por la \emph{Association for Computing Machinery (ACM)} y por Monty Newborn, profesor de 
 Ciencia de la Computación en la Universidad McGill.}, 
 donde, pese a contar con 
 pruebas limitadas antes del torneo, consiguió recuperarse tras 
 un inicio adverso (3 derrotas) y obtuvo un empate 
 \cite{hsu1990deep}.
 
-En agosto de 1987 se rediseñó ChipTest y se rebautizó como 
-ChipTest-M, multiplicando por diez su velocidad de búsqueda 
+En agosto de 1987 se rediseñó \emph{ChipTest} y se rebautizó como 
+\emph{ChipTest-M}, multiplicando por diez su velocidad de búsqueda 
 hasta alrededor de 500000 posiciones por segundo, ya sobre una 
 Sun-4\footnote{Aparecida por primera vez en julio de 1987, con el lanzamiento de la Sun 4/260.}. 
 Esta versión se alzó con el título en el 
 NACCC de 1987 con un marcador de 4-0. El éxito de 
-ChipTest-M condujo al desarrollo de Deep Thought: la versión 
+\emph{ChipTest-M} condujo al desarrollo de \emph{Deep Thought}: la versión 
 0.01 apareció en mayo de 1988 y la 0.02 en noviembre del mismo 
 año, incorporando dos procesadores VLSI dedicados y elevando la 
-tasa de búsqueda a casi 700000 posiciones por segundo. Con Deep Thought, el equipo obtuvo el título en 
+tasa de búsqueda a casi 700000 posiciones por segundo. Con \emph{Deep Thought}, el equipo obtuvo el título en 
 el World Computer Chess Championship de 1989 con un resultado 
 perfecto de 5-0 \cite{newborn1988results}.
 
 \subsection{Primeros éxitos y limitaciones}
 
-Deep Thought destacó en 1988 al compartir el primer puesto en el 
+\emph{Deep Thought} destacó en 1988 al compartir el primer puesto en el 
 Software Toolworks Open de Los Ángeles\footnote{Torneo de ajedrez celebrado en 1988 en Los Ángeles, notable por su relevancia en la historia del ajedrez computacional}, 
 donde venció al gran 
 maestro Bent Larsen, consiguiendo una valoración de rendimiento 
@@ -231,7 +233,7 @@ de 2551 según la USCF (\emph{US Chess Federation}) y ganando
 el Fredkin Intermediate Prize \cite{hsu1990grandmaster}. 
 Asimismo, ganó el ACM Computer Chess 
 Championship en Orlando ese mismo año \cite{hsu1990grandmaster}. Pese a 
-estos logros, la arquitectura de ChipTest y Deep Thought 
+estos logros, la arquitectura de \emph{ChipTest} y \emph{Deep Thought} 
 permanecía limitada por un grado de paralelismo moderado, 
 lo que restringía la profundidad uniforme de 
 búsqueda y obligaba a depender intensamente de heurísticas de 
@@ -245,13 +247,14 @@ competitivo \cite{hsu1990deep}.
 
 
 
-\section{Origen y maduración de Deep Blue}
+\section{Origen y maduración de \textit{Deep Blue}}
 
-A finales de 1989, parte del equipo original de ChipTest y Deep 
-Thought (Feng-hsiung Hsu y Murray Campbell) pasó al IBM T.J. 
+A finales de 1989, parte del equipo original de \emph{ChipTest} y \emph{Deep 
+Thought} (Feng-hsiung Hsu, Murray Campbell, Joe Hoane, Thomas Anantharaman, 
+Andreas Nowatzyk y Mike Browne) pasó al IBM T.J. 
 Watson Research Center para continuar el desarrollo de máquinas 
 de ajedrez de alto rendimiento. En este nuevo entorno se 
-estableció el proyecto \textit{Deep Thought 2}, considerado el 
+estableció el proyecto \textit{\emph{Deep Thought} 2}, considerado el 
 paso intermedio hacia lo que pronto sería conocido como 
 \textit{Deep Blue} \cite{campbell2002deep}. Bajo la dirección de la 
 división de investigación de IBM, el sistema heredó la 
@@ -264,12 +267,12 @@ afinamiento de la función de evaluación y análisis de partidas
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{assets/Deep Blue's core team, Joe Hoane, Feng-hsiung Hsu, and Murray Campbell.jpg}
-    \caption{Equipo central de Deep Blue, Joe Hoane, Feng-hsiung Hsu y Murray Campbell.}
+    \caption{Equipo central de \textit{Deep Blue}, Joe Hoane, Feng-hsiung Hsu y Murray Campbell.}
     \label{fig:team}
 \end{figure}
 
 
-\subsection{Deep Blue I (1995-1996)}
+\subsection{\textit{Deep Blue} I (1995-1996)}
 
 El prototipo \textit{Deep Blue I} comenzó a tomar forma en 1995, 
 tras tres años de diseño de un chip de búsqueda único. La 
@@ -290,7 +293,7 @@ resultado favoreció al campeón humano, la serie demostró que una
 máquina especialmente diseñada podía competir de tú a tú con la 
 élite mundial.
 
-\subsection{Deep Blue II (1996-1997)}
+\subsection{\textit{Deep Blue} II (1996-1997)}
 
 Tras el match de 1996 quedó patente la necesidad de mejorar la 
 función de evaluación y aumentar el paralelismo. En respuesta, 
@@ -304,7 +307,7 @@ creces la capacidad de búsqueda \cite{campbell2002deep}.
 
 Entre enero y mayo de 1997, el equipo dedicó la mayor parte de 
 sus esfuerzos a afinar la función de evaluación y a preparar la 
-base de datos de aperturas y finales. El resultado fue 
+base de datos de aperturas y finales\footnote{Colección exhaustiva de posiciones de ajedrez con resultados precalculados, utilizadas para acelerar la búsqueda en las fases inicial y final del juego.}. El resultado fue 
 \textit{Deep Blue II}, que derrotó a Kasparov por 3\(\frac{1}{2}\)-2\(\frac{1}{2}\) en mayo
 de 1997, convirtiéndose en la primera máquina en vencer al 
 campeón mundial en un match reglamentario y recibiendo por 
@@ -315,7 +318,7 @@ ello el Premio Fredkin\footnote{Premio creado por Edward Frenkin para la primera
 \begin{figure}[h]
     \centering
     \includegraphics[width=0.6\textwidth]{assets/deepblue.jpg}
-    \caption{Deep Blue.}
+    \caption{\textit{Deep Blue}.}
     \label{fig:deepblue}
 \end{figure}
 
@@ -332,11 +335,13 @@ ello el Premio Fredkin\footnote{Premio creado por Edward Frenkin para la primera
 
 La solidez de la capacidad de cómputo de \textit{Deep Blue} 
 descansa en su diseño arquitectónico, que combina un clúster de 
-propósito general de alto rendimiento con cientos de 
+propósito general de alto rendimiento\footnote{Conjunto de computadoras interconectadas que trabajan en conjunto para resolver un problema complejo. La flexibilidad de "propósito general" permite ejecutar una variedad de tareas.} 
+con cientos de 
 aceleradores VLSI especializados. Esta configuración híbrida 
 permite delegar las primeras fases de la búsqueda en un entorno 
 distribuido de nodos IBM RS/6000 SP, optimizado para la gestión 
-de tablas de transposición y la coordinación de tareas, y 
+de tablas de transposición\footnote{Estructura de datos que almacena resultados de evaluaciones de posiciones ya analizadas, permitiendo la reutilización de información y evitando cálculos redundantes.} 
+y la coordinación de tareas, y 
 delegar las fases más profundas y tácticamente críticas en chips 
 dedicados que ejecutan en silicio algoritmos de evaluación y 
 control de búsqueda con latencia mínima \cite{campbell2002deep}. 
@@ -354,7 +359,8 @@ de los cuales veintiocho funcionan a una
 frecuencia de 120 MHz y dos a 135 MHz. Cada nodo dispone de 1 GB 
 de memoria RAM y 4 GB de almacenamiento local. La interconexión 
 se realiza mediante un conmutador de alta velocidad que 
-implementa el estándar MPI (\emph{Message-Passing Interface Standard}), garantizando una latencia mínima en 
+implementa el estándar MPI (\emph{Message-Passing Interface Standard})\footnote{Especificación estándar para la comunicación entre nodos en un sistema de computación paralela. Define funciones y protocolos para el intercambio de mensajes.}, 
+garantizando una latencia mínima en 
 el envío y recepción de posiciones de ajedrez durante la 
 búsqueda paralela \cite{campbell2002deep, hsu1999ibm}.
 
@@ -368,7 +374,8 @@ movimientos basado en lógica combinatoria (matriz 8x8), una
 función de evaluación en dos niveles —rápida (un ciclo de reloj) 
 y lenta (análisis columna por columna de estructuras complejas)—, 
 y un controlador de búsqueda alpha-beta de ventana nula con 
-extensiones locales (jaques, peones pasados\footnote{Un \emph{peón pasado} 
+extensiones locales\footnote{Variación del algoritmo alpha-beta que utiliza una ventana de búsqueda estrecha (nula) para identificar rápidamente movimientos prometedores, extendiendo la búsqueda en profundidad solo en esas ramas.} 
+(jaques, peones pasados\footnote{Un \emph{peón pasado} 
 es aquel que no tiene peones enemigos en su misma columna ni en 
 las columnas adyacentes que puedan impedir su avance hacia la 
 octava fila}, detección de 
@@ -381,7 +388,7 @@ millones de posiciones por segundo por chip. \cite{hsu1999ibm}
 \begin{figure}[h!]
     \centering
     \includegraphics[width=0.6\textwidth]{assets/deep-blue-chip.jpg}
-    \caption{Esquema del chip VLSI de Deep Blue: generador de movimientos, evaluación rápida/lenta y controlador alpha-beta de ventana nula.}
+    \caption{Esquema del chip VLSI de \textit{Deep Blue}: generador de movimientos, evaluación rápida/lenta y controlador alpha-beta de ventana nula.}
     \label{fig:chip_vlsi}
 \end{figure}
 
@@ -475,7 +482,10 @@ tanto en \emph{hardware} como en \emph{software}.
 Entre los criterios de extensión destacan la \emph{singularidad} 
 (cuando un movimiento es claramente superior a todas las alternativas, 
 se extiende 1-2 plies adicionales) y los \emph{jaques} o 
-\emph{peones pasados}\footnote{Un peón pasado es aquel que no puede ser detenido por peones enemigos en su misma o en las columnas adyacentes.}, 
+\emph{peones pasados}\footnote{Un \emph{peón pasado} 
+es aquel que no tiene peones enemigos en su misma columna ni en 
+las columnas adyacentes que puedan impedir su avance hacia la 
+octava fila}, 
 que reciben tratamiento 
 preferente para explorar líneas forzadas. 
 La detección de repeticiones se implementa mediante un buffer 
@@ -492,7 +502,8 @@ ramas que no pueden mejorar la decisión actual.}
 La búsqueda quiescente continúa hasta que no quedan capturas 
 críticas ni amenazas inmediatas, garantizando que sólo se 
 evalúen posiciones \emph{quietas} y evitando así que variantes 
-tácticas escapadas distorsionen la valoración final.
+tácticas perdidas\footnote{Situaciones en el juego donde una secuencia de movimientos forzados (táctica) lleva a una posición ventajosa que inicialmente podrían no ser evidentes y no encontrarse en el análisis.} 
+distorsionen la valoración final.
 
 
 
@@ -630,8 +641,7 @@ subconjunto de aperturas y líneas de juego añadido justo antes
 de la partida para corregir o anular jugadas del libro principal, 
 incorporando ajustes de última hora basados en preparaciones 
 específicas contra el adversario.} 
-de última hora para correcciones de último 
-minuto \cite{campbell2002deep}.
+para correcciones de última hora \cite{campbell2002deep}.
 
 \subsection{\emph{Extended Book}}
 
@@ -646,7 +656,7 @@ de manera no lineal y ponderada para
 reflejar consenso teórico de apertura \cite{campbell2002deep}. 
 En situaciones extremas, una bonificación superior a medio 
 peón\footnote{En ajedrez computacional, “medio peón” (\emph{half pawn}) 
-equivale a 50 centipawns; un centipawn es la centésima parte 
+equivale a 50 centipawns; un centipawn (o centipeón) es la centésima parte 
 del valor de un peón estándar y sirve para medir diferencias de 
 valoración posicional con mayor granularidad.} 
 permitía ejecutar la jugada directamente sin activación de 
@@ -657,16 +667,19 @@ la búsqueda completa \cite{campbell2002deep}.
 Para los finales, \textit{Deep Blue} recurría a bases de datos 
 de finales con todas las posiciones de hasta cinco piezas y 
 casos seleccionados de seis piezas (por ejemplo, peones 
-bloqueados), extraídas principalmente de Colecciones de Ken 
+bloqueados\footnote{Situación en el ajedrez donde dos peones de colores opuestos están uno frente al otro, impidiendo el avance de ambos. Esto crea tensiones posicionales y estratégicas.}), 
+extraídas principalmente de Colecciones de Ken 
 Thompson \cite{thompson1986retrograde} y contribuciones de Lewis Stiller \cite{campbell2002deep}. 
-Cada posición se indexaba como un bit (ganar o no perder), de 
+Cada posición se indexaba como un bit (posición ganadora), de 
 modo que al alcanzarse durante la búsqueda se aplicaba 
-inmediatamente un \emph{cutoff} sin necesidad de desarrollar subárboles 
+inmediatamente un \emph{cutoff}\footnote{Terminación anticipada de la búsqueda en una rama del árbol de juego cuando se determina que esa rama no puede mejorar la mejor solución encontrada hasta el momento.} 
+sin necesidad de desarrollar subárboles 
 adicionales según el valor del resultado, 
 compuesto por dos partes: 
 \emph{high-order} para la victoria o empate, \emph{low-order} 
-para el desempate. \cite{campbell2002deep}. Estas bases residían localmente 
-en cada nodo SP y en arreglos RAID\footnote{Un grupo/matriz redundante de discos independientes (también, RAID, del inglés \emph{redundant array of independent disks}) 
+para el desempate\footnote{Componentes de la evaluación de una posición. "\emph{High-order}" representa el valor principal (victoria, empate), mientras que "\emph{low-order}" sirve para refinar la evaluación en caso de igualdad en el "\emph{high-order}".}. 
+\cite{campbell2002deep}. Estas bases residían localmente 
+en cada nodo SP y en arreglos RAID\footnote{Un grupo/matriz redundante de discos independientes (RAID, del inglés \emph{redundant array of independent disks}) 
 hace referencia a un sistema de almacenamiento de datos que 
 utiliza múltiples unidades, entre las cuales se distribuyen o 
 replican los datos.} compartidos, garantizando 
@@ -677,7 +690,8 @@ acceso rápido en tiempo de búsqueda \cite{campbell2002deep}.
 El mecanismo de control de tiempo de \textit{Deep Blue} definía 
 dos objetivos temporales antes de cada movida: un tiempo 
 “normal”, calculado como el tiempo restante hasta el próximo 
-control dividido por los movimientos estimados, y un tiempo 
+control\footnote{Cantidad de tiempo que le queda a un jugador en un juego de ajedrez antes de alcanzar un punto de control de tiempo específico.} 
+dividido por los movimientos estimados, y un tiempo 
 “pánico” equivalente a un tercio del tiempo restante 
 \cite{campbell2002deep}. Si al alcanzar el tiempo normal no se 
 detectaban condiciones excepcionales, el sistema jugaba el mejor 
@@ -717,7 +731,7 @@ institucional y mediática en la investigación aplicada en IA.
     \centering
     \includegraphics[width=0.6\textwidth]{assets/deepbluevskasparov.jpg}
     \caption{El campeón mundial de ajedrez Garry Kasparov (izq.) realiza un movimiento durante su cuarta partida contra \emph{Deep Blue}.}
-    \label{fig:deepblue}
+    \label{fig:deepbluevskasparov}
 \end{figure}
 
 
@@ -736,12 +750,14 @@ aceleradores especializados \cite{ibmHistoryDeepBlue}.
 
 Tras el éxito de \textit{Deep Blue}, el paradigma de desplazar 
 cargas críticas de cálculo a hardware dedicado se expandió 
-rápidamente. En el ámbito financiero, los \emph{hedge funds} 
-adoptaron técnicas de \emph{cluster computing} para simulaciones de 
+rápidamente. En el ámbito financiero, los \emph{hedge funds}\footnote{Fondos de inversión que utilizan una variedad de estrategias complejas para generar rendimientos, a menudo involucrando un alto grado de apalancamiento y riesgo.} 
+adoptaron técnicas de \emph{cluster computing}\footnote{Conjunto de métodos y tecnologías utilizadas para coordinar y gestionar los recursos de un cluster de computadoras, optimizando el rendimiento y la eficiencia.} 
+para simulaciones de 
 riesgo en tiempo real, inspiradas en la arquitectura 
 maestro-trabajador-chip de IBM \cite{aung2010}. Asimismo, la práctica 
 de \emph{offloading} a 
-aceleradores (ahora GPUs y FPGAs) se consolidó en aplicaciones de 
+aceleradores (ahora GPUs y FPGAs\footnote{GPUs (\emph{Graphics Processing Units}) son procesadores diseñados para el procesamiento paralelo de datos, especialmente imágenes. FPGAs (\emph{Field-Programmable Gate Arrays}) son circuitos integrados que pueden ser reprogramados después de su fabricación, lo que permite una gran flexibilidad en el diseño de hardware.}) 
+se consolidó en aplicaciones de 
 aprendizaje profundo, siguiendo el modelo pionero de \textit{Deep 
 Blue} \cite{forbes2019explainable}.
 
@@ -752,7 +768,8 @@ sociología de la ciencia sobre la confianza en sistemas automatizados.
 Documentales como \emph{Game Over: Kasparov and the Machine} (2003) 
 examinaron las acusaciones de falta de transparencia en el diseño de 
 \textit{Deep Blue}, alimentando la demanda de auditorías de “caja 
-blanca” en sistemas críticos. A largo plazo, 
+blanca” en sistemas críticos\footnote{Evaluación exhaustiva de un sistema, donde el auditor tiene acceso completo al código fuente, la documentación y la arquitectura del sistema, lo que permite una revisión detallada de la seguridad y la funcionalidad.}. 
+A largo plazo, 
 esta preocupación influyó en la creación de estándares de 
 explicabilidad en IA, que hoy exigen trazabilidad de decisiones 
 algorítmicas en sectores como la sanidad y la justicia 
@@ -769,6 +786,162 @@ entre la aparente originalidad de una IA y la complejidad de sus
 reglas internas, subrayando la importancia de la transparencia para 
 comprender sus decisiones.
 
+\section{Biografías}
+
+\subsection*{Murray Campbell}
+
+Murray S. Campbell (nacido en 1957 en Edmonton, Canadá) es un 
+informático pionero en el campo del ajedrez computacional. 
+Obtuvo su B.Sc.\ en Ciencias de la Computación en 1979 y su M.Sc.\ 
+en 1981 en la University of Alberta, trabajando allí con Hans 
+Berliner en el proyecto HiTech, campeón de la North American 
+Computer Chess Championship en 1985 y 1989. 
+En 1987 completó su Ph.D.\ en la Carnegie Mellon University con 
+una tesis sobre la paralelización de la búsqueda alfa-beta en 
+ajedrez, sentando las bases de sistemas como \emph{Deep Thought} 
+\cite{icore2004bod}.
+
+En 1989 se incorporó al IBM T.J.\ Watson Research Center, donde 
+fue miembro clave del equipo que diseñó y construyó \emph{Deep Blue}, el 
+primer ordenador en derrotar a un campeón mundial de ajedrez bajo 
+condiciones de torneo en 1997. Campbell 
+desarrolló principalmente la función de evaluación del sistema y 
+colaboró estrechamente con el Gran Maestro Joel Benjamin en la 
+preparación del libro de aperturas \cite{chessprog_murray}. 
+Actualmente es Distinguished Research Scientist en el grupo AI 
+Foundations de IBM, centrado en arquitecturas neuro-simbólicas y 
+evaluación de capacidades de los sistemas de IA \cite{ibmCampbellBio}.
+
+
+\subsection*{Feng-hsiung Hsu}
+
+Feng-hsiung Hsu (nacido el 1 de enero de 1959 en Keelung, 
+Taiwán) es un pionero taiwanés-estadounidense en ciencia de la 
+computación e ingeniería eléctrica, célebre por diseñar los chips 
+VLSI que impulsaron los sistemas \emph{ChipTest} y \emph{Deep Thought}, 
+precursores directos de \textit{Deep Blue} 
+\cite{chessprog_hsu}. Tras obtener su B.S.\ en 
+Ingeniería Eléctrica en la Universidad Nacional de Taiwán, Hsu 
+llegó a la Carnegie Mellon University en 1985 para cursar estudios 
+de posgrado en computación, donde en 1989 defendió su tesis 
+doctoral sobre la paralelización a gran escala de la búsqueda alfa-beta 
+en ajedrez. Su trabajo durante ese período 
+condujo al desarrollo de \emph{Deep Thought}, el primer programa en 
+derrotar a un Gran Maestro en torneo oficial, y cimentó su rol 
+como arquitecto principal del equipo IBM que, en 1997, consiguió 
+que \textit{Deep Blue} venciera al campeón mundial Garry Kasparov 
+\cite{ibmHistoryDeepBlue}.
+
+Tras la gesta de 1997, Hsu amplió su carrera en la industria: en 
+1997 se incorporó a Compaq/HP y, desde 2003, forma parte de 
+Microsoft Research Asia en Pekín, donde ha continuado explorando 
+arquitecturas paralelas y aplicaciones de inteligencia artificial. 
+Entre sus reconocimientos destacan el ACM 
+Grace Murray Hopper Award de 1991 y el IEEE Mephisto 
+Best-Publication Award, además de ser autor de \emph{Behind Deep 
+Blue: Building the Computer that Defeated the World Chess Champion} 
+(Princeton University Press, 2002), obra de referencia sobre la 
+historia y la ingeniería de \textit{Deep Blue} \cite{hsu2022behind}. 
+Su legado perdura en la adopción de aceleradores de hardware y 
+diseños híbridos en múltiples dominios científicos y empresariales.
+
+\subsection*{A. Joseph “Joe” Hoane Jr.}
+
+A. Joseph Hoane Jr. (nacido en 1962) es un científico de la 
+computación y ingeniero de software estadounidense, reconocido por 
+su papel como ingeniero de software principal en el proyecto 
+\emph{Deep Blue}. Tras obtener su licenciatura en Ciencias de la 
+Computación por la Universidad de Illinois en Urbana-Champaign en 
+1984 y un máster en la misma especialidad en Columbia University 
+en 1994, Hoane se incorporó a IBM Research en noviembre de 1990 
+para unirse al equipo entonces denominado \emph{Deep Thought}, 
+que más 
+tarde sería renombrado \emph{Deep Blue} \cite{chessprog_hoane}.  
+
+Como responsable del desarrollo del algoritmo de búsqueda 
+paralela, Hoane diseñó y optimizó la coordinación entre el clúster 
+RS/6000 SP y los chips VLSI especializados, asegurando un balance 
+de carga eficiente y una escalabilidad que culminó en la victoria 
+histórica contra Garry Kasparov \cite{ibmHistoryDeepBlue}. 
+Además de sus contribuciones en \emph{Deep Blue}, ha coautoreado artículos 
+fundamentales como “\emph{Deep Blue} System Overview” (1995) \cite{hsu1995deep} y 
+“Search Control Methods in \emph{Deep Blue}” (1999) \cite{campbell1999search}, 
+que documentan las 
+innovaciones de software que permitieron combinar de manera 
+efectiva técnicas de búsqueda selectiva con la gran capacidad de 
+procesamiento en silicio.
+
+\subsection*{Thomas S. Anantharaman}
+
+Thomas S. Anantharaman nació en 1962 en Varanasi, India. 
+Obtuvo su B.Tech en Ingeniería Electrónica en 1982 por el 
+Institute of Technology, Banaras Hindu University, habiendo 
+logrado el segundo puesto en el examen de ingreso IIT-JEE de 1977 
+\cite{itbhu_anantharaman}. Posteriormente se trasladó a la 
+Carnegie Mellon University, donde entre 1985 y 1990 colaboró con 
+Feng-hsiung Hsu y Murray Campbell en los proyectos \emph{ChipTest} y 
+\emph{Deep Thought}. Su investigación culminó con la defensa de la tesis 
+doctoral “A Statistical Study of Selective Min-Max Search in 
+Computer Chess” en 1990 \cite{anantharaman1990statistical}, trabajo que sentó las bases algorítmicas 
+para \emph{Deep Blue} \cite{chessprog_anantharaman}.
+
+Tras completar su doctorado, Anantharaman orientó su carrera hacia 
+la bioinformática, especializándose en métodos bayesianos para el 
+análisis de tecnologías de mapeo óptico de moléculas. En la 
+actualidad ejerce como Senior Bioinformatics Software Engineer en 
+BioNano Genomics, en San Diego, donde lidera el desarrollo de 
+software para el ensamblaje y análisis de mapas genómicos de 
+moléculas individuales \cite{linkedin_anantharaman}.  
+
+\subsection*{Andreas G. Nowatzyk}
+
+Andreas G. Nowatzyk nació en Alemania y obtuvo titulaciones en 
+Física y en Ciencias de la Computación en la Universität Hamburg, 
+Alemania. Posteriormente cursó el doctorado en Ciencias de la 
+Computación en Carnegie Mellon University, donde se graduó en 1989 
+tras investigar sistemas de comunicación de alta velocidad y 
+multiprocesamiento \cite{cmuNowatzyk}. Durante sus años de 
+posgrado contribuyó al diseño de la arquitectura y la coherencia 
+de caché en el proyecto S3.mp de Sun Microsystems, liderando 
+investigaciones sobre modelos de memoria compartida escalable 
+\cite{s3mpNowatzyk}.
+
+Entre 1987 y 1990 formó parte del equipo \emph{Deep Thought} en Carnegie 
+Mellon, colaborando en el afinamiento de la función de evaluación \cite{chessprogNowatzyk}. 
+Tras su paso por 
+\emph{Deep Thought}, Nowatzyk trabajó en Digital Equipment Corporation y 
+en los laboratorios de Compaq, especializándose en arquitecturas 
+heterogéneas de multiprocesamiento y, más recientemente, ocupa el 
+puesto de Principal Investigator en Google, donde investiga 
+aceleradores hardware y sistemas paralelos de alta eficiencia 
+\cite{cmuNowatzyk}.
+
+
+\subsection*{Michael “Mike” Browne}
+
+Michael “Mike” Browne es un ingeniero de software e investigador 
+que formó parte del equipo original de \emph{Deep Thought} en 
+Carnegie Mellon, precursor directo de \emph{Deep Blue}. En la fase 
+inicial (1987-1989), Browne colaboró con Feng-hsiung Hsu, Thomas 
+Anantharaman y Murray Campbell en el diseño e implementación del 
+generador de movimientos y de los módulos de evaluación heurística 
+de los chips VLSI, contribuyendo a que \emph{Deep Thought} se convirtiera 
+en la primera máquina en derrotar a un gran maestro en torneo 
+oficial \cite{chessprog_deepthought}. Tras la adquisición del 
+proyecto por IBM y su evolución hasta \emph{Deep Blue}, Browne continuó 
+apoyando la integración de software y hardware especializados que 
+culminó en la histórica victoria frente a Garry Kasparov 
+\cite{ibmHistoryDeepBlue}.
+
+
+
+\begin{figure}[h]
+    \centering
+    \includegraphics[width=0.6\textwidth]{assets/team.jpg}
+    \caption{Murray Campbell, Feng-hsiung Hsu, Thomas Anantharaman, Mike Browne y Andreas Nowatzyk
+    después de ganar el Premio Fredkin por el desempeño a nivel de Gran Maestro de \emph{Deep Thought}.}
+    \label{fig:team2}
+\end{figure}
 
 
 
@@ -783,7 +956,8 @@ confluencia de tres líneas de innovación (\emph{hardware} VLSI
 especializado, algoritmos de búsqueda selectiva y bases de datos 
 inteligentes) permitió superar las barreras históricas entre el 
 ajedrez humano y la computadora. En primer lugar, los chips 
-VLSI diseñados \emph{ad hoc} para generación de movimientos y 
+VLSI diseñados \emph{ad hoc}\footnote{Chips diseñados para un propósito específico y no para uso general. Este diseño personalizado permite optimizar el rendimiento para la tarea deseada.} 
+para generación de movimientos y 
 evaluación en un ciclo de reloj demostraron que el procesamiento 
 masivamente paralelo podía explotar la fuerza bruta sin 
 sacrificar precisión táctica \cite{campbell2002deep}. 
@@ -795,7 +969,7 @@ explosiones combinatorias y preservaban robustez frente a
 amenazas tácticas \cite{aung2010}. Por último, la 
 integración de un libro principal, un “\emph{extended book}” de 700 000 
 partidas y bases de finales con todos los casos de hasta cinco 
-piezas proporcionó un conocimiento posicional sólido que 
+piezas (y casos seleccionados de seis piezas) proporcionó un conocimiento posicional sólido que 
 complementó el poder de cómputo, reduciendo la dependencia en 
 el cálculo exhaustivo en fases teóricamente bien entendidas 
 \cite{greenemeier2017}.
